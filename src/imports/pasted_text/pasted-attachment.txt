@@ -1,0 +1,536 @@
+AlmoraX Website Prompt — Product Designer Version (White Theme, Revenue-First Positioning)
+
+Design a premium modern SaaS website for AlmoraX, an AI-powered growth operating system for Mutual Fund Distributors (MFDs), wealth advisors, and financial professionals.
+
+IMPORTANT:
+This is NOT a “content creation platform.”
+
+The website positioning should communicate that AlmoraX is:
+
+an AI-powered client activation engine
+a WhatsApp-driven growth infrastructure
+a retention and engagement system
+an automated advisor operating layer
+
+The website should make users immediately understand:
+
+“This platform helps advisors revive inactive clients, automate engagement, and grow AUM — without manual effort.”
+
+The core narrative is:
+Traditional advisors are losing revenue because client communication and follow-ups are manual, fragmented, and inconsistent.
+
+AlmoraX fixes this with:
+
+AI-triggered engagement
+campaign automation
+WhatsApp routing
+advisor branding
+compliance-safe workflows
+intelligent client activation
+
+The website should feel:
+
+premium
+intuitive
+trustworthy
+intelligent
+operationally clear
+revenue-focused
+AI-native
+modern fintech
+
+Avoid:
+
+generic content-platform vibes
+Canva-like aesthetics
+social media creator aesthetics
+crypto UI
+flashy startup visuals
+
+The design must feel like:
+“Mission-critical infrastructure for advisor growth.”
+
+WEBSITE STYLE
+Theme
+
+Light / White Premium Theme
+
+UI Feel
+
+Combination of:
+
+Stripe
+Linear
+Brex
+Ramp
+Vercel
+Notion AI
+Visual Language
+clean layouts
+premium whitespace
+intuitive navigation
+elegant typography
+soft shadows
+minimal gradients
+rounded cards
+subtle motion
+enterprise SaaS UI
+AI workflow diagrams
+intelligent dashboards
+
+The interface should feel:
+
+effortless
+calm
+highly usable
+operationally organized
+COLOR PALETTE
+
+Primary:
+
+White (#FFFFFF)
+Off White (#F8FAFC)
+Light Gray (#EEF2F7)
+
+Accent:
+
+Royal Blue (#2563EB)
+Emerald Green (#10B981)
+
+Text:
+
+Deep Navy (#081120)
+Slate Gray (#64748B)
+
+Use gradients subtly.
+Avoid dark heavy backgrounds.
+
+TYPOGRAPHY
+
+Use:
+
+Inter
+Geist
+Satoshi
+
+Typography style:
+
+bold hero headlines
+generous spacing
+fintech-grade readability
+calm hierarchy
+WEBSITE STRUCTURE
+
+Create ONLY these sections:
+
+Hero Section
+Core Problem Section
+AI Operating System Overview
+Features Grid
+Workflow Automation Showcase
+Compliance + Branding Layer
+Pricing
+FAQ
+Final CTA
+Footer
+LOGO DESIGN PROMPT
+
+Design a premium AI-fintech SaaS logo for “AlmoraX”.
+
+The logo should communicate:
+
+trust
+automation
+intelligence
+advisor growth
+AI infrastructure
+operational simplicity
+
+Style:
+
+minimal geometric symbol
+premium typography
+modern fintech aesthetic
+scalable app icon
+enterprise SaaS branding
+
+Possible concepts:
+
+connected AI nodes forming “A”
+upward growth architecture
+intelligent routing pathways
+modern signal system
+growth engine symbol
+advisor network visualization
+
+Colors:
+
+navy blue
+royal blue
+emerald accents
+white background
+
+Typography:
+
+modern sans-serif
+slightly futuristic
+highly readable
+
+Deliver:
+
+logo
+icon mark
+favicon
+monochrome version
+horizontal lockup
+
+The brand should feel like:
+“The operating system for advisor growth.”
+
+HERO SECTION
+Headline
+
+Revive Silent Clients. Automate Engagement. Grow AUM.
+
+Subheadline
+
+AlmoraX helps financial advisors automate client activation, WhatsApp engagement, campaign workflows, branding, and compliance — all from one intelligent AI system.
+
+CTA Buttons
+
+Primary:
+Book Demo
+
+Secondary:
+Watch Product Tour
+
+Hero Visual
+
+Create a stunning white-theme AI dashboard visual showing:
+
+inactive client alerts
+WhatsApp engagement automation
+AI-generated campaigns
+campaign planner
+advisor branding automation
+smart client segmentation
+engagement analytics
+
+The dashboard should visually explain:
+
+Traditional Workflow:
+manual work → fragmented tools → inconsistent follow-ups
+
+AlmoraX Workflow:
+AI-triggered automation → one-tap engagement → revived client activity
+
+Use:
+
+floating cards
+AI workflow lines
+smart notifications
+clean analytics
+intuitive fintech UI
+subtle animations
+
+The hero should immediately communicate:
+“This platform drives advisor revenue automatically.”
+
+CORE PROBLEM SECTION
+Headline
+
+Financial Advisors Don’t Have a Content Problem. They Have an Activation Problem.
+
+Show real advisor pain points:
+
+clients stopping SIPs silently
+no follow-up systems
+manual WhatsApp outreach
+operational overload
+disconnected tools
+inconsistent engagement
+lost AUM opportunities
+
+Visualize:
+
+advisor switching between:
+WhatsApp
+PDFs
+Canva
+spreadsheets
+email
+CRM
+chaotic fragmented workflow
+
+Then visually transition into:
+“One AI operating system.”
+
+Messaging should emotionally resonate with Indian MFDs.
+
+The user should feel:
+“Yes, this is exactly my daily chaos.”
+
+AI OPERATING SYSTEM OVERVIEW
+Headline
+
+The AI Operating System for Advisor Growth
+
+Explain AlmoraX as:
+
+a client activation infrastructure
+a campaign intelligence engine
+a WhatsApp engagement system
+a growth automation layer
+
+Create an elegant workflow architecture:
+
+Client Data / Signals
+↓
+AI Detection Engine
+↓
+Localized Campaign Creation
+↓
+Advisor Branding Applied
+↓
+Compliance Added
+↓
+One-Tap WhatsApp Distribution
+↓
+Engagement Analytics
+
+Visual Style:
+
+intelligent system diagrams
+white SaaS UI
+connected AI workflows
+soft gradients
+premium operational graphics
+
+Messaging:
+“AlmoraX transforms engagement into an automated growth engine.”
+
+FEATURES GRID
+
+IMPORTANT:
+Only ONE feature should look fully active.
+
+Everything else should be labeled:
+“Coming Soon”
+
+ACTIVE FEATURE
+AI Campaign Planner
+
+Capabilities:
+
+campaign scheduling
+localized messaging
+WhatsApp campaign planning
+recurring engagement
+investor communication workflows
+smart reminders
+AI-generated campaign suggestions
+engagement calendar
+
+Visual:
+Premium campaign planning dashboard card.
+
+This should feel like:
+“the operational center of advisor engagement.”
+
+COMING SOON FEATURES
+
+Display elegantly in muted cards.
+
+Features:
+
+AI Co-Branding
+WhatsApp Automation
+CRM Intelligence
+Compliance Automation
+Client Segmentation
+Analytics Dashboard
+AI Engagement Assistant
+SIP Revival Engine
+Lead Intelligence
+
+Each card should include:
+
+icon
+short description
+“Coming Soon” badge
+
+Style:
+
+soft gray cards
+slightly disabled appearance
+premium placeholders
+WORKFLOW AUTOMATION SHOWCASE
+Headline
+
+From Client Signals to WhatsApp Engagement — Fully Automated
+
+Create a highly intuitive workflow animation:
+
+Client Stops SIP
+↓
+AI Detects Inactivity
+↓
+Localized Campaign Generated
+↓
+Branding + Compliance Applied
+↓
+WhatsApp Blast Triggered
+↓
+Client Re-engages
+
+This section is CRITICAL.
+
+The website should make users instantly understand:
+“This saves hours and revives revenue.”
+
+Visual Style:
+
+animated process flow
+intelligent routing diagrams
+AI orchestration visuals
+modern fintech workflow UI
+
+Avoid technical complexity.
+Everything should feel:
+simple, intuitive, and magical.
+
+COMPLIANCE + BRANDING LAYER
+Headline
+
+Built for Trust, Branding & Compliance
+
+Highlight:
+
+advisor branding consistency
+automated disclaimers
+ARN integration
+professional communication
+SEBI-safe workflows
+
+Visualize:
+
+AI applying branding automatically
+compliance approval states
+trusted advisor identity
+ready-to-send campaign previews
+
+The design should communicate:
+
+reliability
+professionalism
+trust
+security
+
+This section should feel enterprise-grade.
+
+PRICING SECTION
+
+Create 3 pricing cards:
+
+Starter
+
+For individual advisors beginning digital engagement.
+
+Growth
+
+For active advisors scaling client communication.
+
+Highlight:
+Most Popular
+
+Enterprise
+
+For advisory firms and teams.
+
+Style:
+
+elegant white cards
+soft shadows
+premium SaaS pricing UI
+fintech-grade design
+
+Include:
+
+CTA buttons
+feature list
+comparison hierarchy
+FAQ SECTION
+
+Elegant accordion design.
+
+Questions:
+
+What is AlmoraX?
+Who is AlmoraX for?
+How does WhatsApp engagement work?
+Can AlmoraX help revive inactive SIP clients?
+Is compliance supported?
+What features are coming soon?
+Does AlmoraX support advisor branding?
+Can teams use AlmoraX?
+
+Style:
+
+minimal
+intuitive
+spacious
+modern
+FINAL CTA SECTION
+Headline
+
+Your Clients Should Never Go Silent Again.
+
+Subheadline
+
+AlmoraX helps advisors automate engagement, revive inactive clients, and stay consistently top-of-mind — without operational overload.
+
+CTA:
+Book Demo
+
+Visual:
+
+soft gradients
+floating workflow cards
+premium AI-fintech aesthetics
+FOOTER
+
+Include:
+
+logo
+navigation links
+product links
+company links
+social icons
+contact
+privacy policy
+terms
+
+Style:
+
+clean
+white
+minimal
+enterprise-grade
+UX PRINCIPLES
+
+The entire website must feel:
+
+extremely intuitive
+visually organized
+easy to scan
+calm and intelligent
+operationally clear
+
+The user should understand the value proposition within 5 seconds:
+“AlmoraX helps me automatically revive and engage clients through AI-powered WhatsApp workflows.”
+
+Avoid clutter.
+Prioritize clarity over decoration.
+
+The website should feel like:
+“the future infrastructure layer for financial advisors.”
