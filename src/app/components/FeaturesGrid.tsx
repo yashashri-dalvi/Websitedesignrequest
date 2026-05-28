@@ -1,140 +1,111 @@
-﻿import { BarChart3, CalendarDays, MessageSquare, Palette, ShieldCheck } from "lucide-react";
+import { BarChart3, CalendarDays, MessageSquare, Palette, ShieldCheck } from "lucide-react";
 
 export function FeaturesGrid() {
   const features = [
     {
       icon: CalendarDays,
       title: "Campaign Planner",
-      description:
-        "Plan monthly investor touchpoints, SIP nudges, tax-saving reminders, and festival campaigns from one organized calendar.",
-      visual: "Calendar",
+      description: "Plan SIP nudges, tax reminders, and monthly investor touchpoints in one clean calendar.",
       accent: "from-[#8A2BE2] to-[#00B2FF]",
-      details: ["Recurring schedules", "AI campaign drafts", "Investor-ready reminders"],
-      stats: ["12 campaigns", "4 scheduled", "Tax saver active"],
+      stat: "12",
+      label: "Campaigns",
+      rows: ["Monthly SIP follow-up", "Tax saving reminder"],
     },
     {
       icon: ShieldCheck,
       title: "Compliance Automation",
-      description:
-        "Apply disclaimers, risk language, ARN details, and approval-ready communication checks before campaigns go out.",
-      visual: "Verified",
-      accent: "from-[#00B2FF] to-[#00B2FF]",
-      details: ["ARN placement", "Disclaimer blocks", "Approval states"],
-      stats: ["ARN verified", "2 drafts approved", "Risk copy applied"],
+      description: "Apply ARN details, disclaimers, risk language, and approval states before outreach.",
+      accent: "from-[#00B2FF] to-[#6A3DFF]",
+      stat: "98%",
+      label: "Ready",
+      rows: ["ARN verified", "Risk copy applied"],
     },
     {
       icon: Palette,
       title: "AI Co-Branding",
-      description:
-        "Turn every message into a professional advisor-branded asset with consistent identity, logo placement, and tone.",
-      visual: "Brand Kit",
+      description: "Generate advisor-branded communication with consistent identity and premium templates.",
       accent: "from-[#8A2BE2] to-[#C084FC]",
-      details: ["Logo lockups", "Advisor identity", "Premium templates"],
-      stats: ["Brand kit live", "8 templates", "Tone matched"],
+      stat: "8",
+      label: "Templates",
+      rows: ["Brand kit live", "Tone matched"],
     },
     {
       icon: MessageSquare,
       title: "WhatsApp Automation",
-      description:
-        "Prepare segmented WhatsApp campaigns for client groups and reduce manual follow-ups with structured workflows.",
-      visual: "WhatsApp",
+      description: "Prepare segmented WhatsApp workflows for timely, advisor-approved client engagement.",
       accent: "from-[#00B2FF] to-[#22C55E]",
-      details: ["Client groups", "One-tap sends", "Follow-up flows"],
-      stats: ["245 recipients", "SIP revival", "Ready to send"],
+      stat: "245",
+      label: "Recipients",
+      rows: ["SIP revival", "Ready to send"],
     },
     {
       icon: BarChart3,
       title: "Analytics Dashboard",
-      description:
-        "Measure engagement, campaign response, inactive-client recovery, and growth signals in a clean advisor dashboard.",
-      visual: "Insights",
+      description: "Track responses, inactive-client recovery, and growth signals from every campaign.",
       accent: "from-[#00B2FF] to-[#8A2BE2]",
-      details: ["Engagement metrics", "Campaign performance", "Recovery signals"],
-      stats: ["34% engagement", "18 replies", "9 reactivated"],
+      stat: "+34%",
+      label: "Engagement",
+      rows: ["18 replies", "9 reactivated"],
     },
   ];
 
   return (
     <section id="features" className="relative overflow-hidden bg-white px-6 py-16">
-      <div className="absolute left-1/2 top-12 h-80 w-80 -translate-x-1/2 rounded-full bg-sky-200/30 blur-3xl" />
-      <div className="absolute right-0 top-80 h-72 w-72 rounded-full bg-violet-200/30 blur-3xl" />
+      <div className="absolute left-1/2 top-10 h-72 w-72 -translate-x-1/2 rounded-full bg-sky-200/25 blur-3xl" />
+      <div className="absolute right-0 top-80 h-64 w-64 rounded-full bg-violet-200/25 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <div className="mb-4 inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
-            Advisor growth stack
+            Advisor Growth Stack
           </div>
           <h2
-            className="mb-6 text-4xl tracking-tight lg:text-5xl"
-            style={{
-              fontWeight: 750,
-              lineHeight: "1.06",
-              color: "#0A0F1E",
-              letterSpacing: "-0.02em",
-            }}
+            className="mb-5 text-4xl tracking-tight lg:text-5xl"
+            style={{ fontWeight: 750, lineHeight: "1.06", color: "#0A0F1E" }}
           >
-            Everything MFDs need to plan, brand, automate, and measure client engagement.
+            Plan, Brand, Automate, And Measure Client Engagement.
           </h2>
-          <p className="text-lg leading-relaxed text-slate-600">
-            AlmoraX brings campaign operations, compliance workflows, WhatsApp outreach,
-            advisor branding, and performance visibility into one premium SaaS workspace.
+          <p className="text-lg leading-8 text-slate-600">
+            AlmoraX combines campaign operations, compliance workflows,
+            WhatsApp outreach, advisor branding, and analytics in a focused
+            SaaS workspace for MFDs.
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, i) => (
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          {features.map((feature) => (
             <article
               key={feature.title}
-              className={`group relative min-h-[330px] overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-[0_28px_80px_rgba(14,165,233,0.18)] ${
-                i === 0 ? "lg:col-span-2" : ""
-              }`}
+              className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_14px_45px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1.5 hover:border-sky-200 hover:shadow-[0_22px_65px_rgba(14,165,233,0.14)]"
             >
-              <div className={`absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r ${feature.accent}`} />
-              <div className={`absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br ${feature.accent} opacity-10 blur-2xl transition-transform duration-500 group-hover:scale-125`} />
+              <div className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${feature.accent}`} />
+              <div className={`absolute -right-12 -top-12 h-28 w-28 rounded-full bg-gradient-to-br ${feature.accent} opacity-10 blur-2xl transition-transform duration-500 group-hover:scale-125`} />
 
-              <div className="mb-6 flex items-center justify-between">
-                <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${feature.accent} shadow-lg shadow-sky-500/20`}>
-                  <feature.icon className="h-7 w-7 text-white" />
+              <div className="relative mb-5 flex items-start justify-between gap-3">
+                <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${feature.accent} shadow-lg shadow-sky-500/15`}>
+                  <feature.icon className="h-5 w-5 text-white" />
                 </div>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">
-                  {feature.visual}
-                </span>
+                <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-right">
+                  <div className="text-lg font-black leading-none text-[#0A0F1E]">{feature.stat}</div>
+                  <div className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">{feature.label}</div>
+                </div>
               </div>
 
-              <h3 className="mb-3 text-xl font-bold tracking-tight text-slate-950">
+              <h3 className="relative mb-2 text-lg font-bold tracking-tight text-[#0A0F1E]">
                 {feature.title}
               </h3>
-              <p className="mb-6 text-sm leading-7 text-slate-600">
+              <p className="relative mb-4 text-sm leading-6 text-slate-600">
                 {feature.description}
               </p>
 
-              <div className="mb-5 rounded-2xl border border-slate-200 bg-slate-50/80 p-4">
-                <div className="mb-3 flex items-center justify-between gap-3">
-                  <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
-                    Live demo
-                  </span>
-                  <span className={`rounded-full bg-gradient-to-r ${feature.accent} px-3 py-1 text-xs font-bold text-white`}>
-                    Active
-                  </span>
-                </div>
-                <div className="grid gap-2">
-                  {feature.stats.map((stat, index) => (
-                    <div key={stat} className="flex items-center justify-between rounded-xl bg-white px-3 py-2 shadow-sm">
-                      <span className="text-xs font-semibold text-slate-600">{stat}</span>
-                      <span className={`h-2.5 w-2.5 rounded-full bg-gradient-to-r ${feature.accent}`} style={{ opacity: 1 - index * 0.18 }} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <ul className="space-y-3">
-                {feature.details.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm font-medium text-slate-700">
-                    <span className={`h-2 w-2 rounded-full bg-gradient-to-r ${feature.accent}`} />
-                    {item}
-                  </li>
+              <div className="relative grid gap-2">
+                {feature.rows.map((row) => (
+                  <div key={row} className="flex items-center gap-2 rounded-xl bg-slate-50 px-3 py-2">
+                    <span className={`h-1.5 w-1.5 rounded-full bg-gradient-to-r ${feature.accent}`} />
+                    <span className="text-xs font-semibold text-slate-600">{row}</span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </article>
           ))}
         </div>
@@ -142,6 +113,3 @@ export function FeaturesGrid() {
     </section>
   );
 }
-
-
-

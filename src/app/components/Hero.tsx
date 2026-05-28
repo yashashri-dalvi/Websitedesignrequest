@@ -13,16 +13,16 @@ export function Hero() {
         <div className="animate-fade-up">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
             <Sparkles className="h-4 w-4" />
-            AI automation for mutual fund distributors
+            AI Automation For Mutual Fund Distributors
           </div>
 
           <h1
             className="max-w-3xl text-5xl tracking-tight lg:text-6xl"
             style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
           >
-            AI-powered advisor growth platform for MFDs.{" "}
+            AI-Powered Advisor Growth Platform For MFDs.{" "}
             <span className="bg-gradient-to-r from-[#8A2BE2] via-[#6A3DFF] to-[#00B2FF] bg-clip-text text-transparent">
-              Grow engagement.
+              Grow Engagement.
             </span>
           </h1>
 

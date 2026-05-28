@@ -14,13 +14,13 @@ export function FinalCTA() {
 
           <div className="relative">
             <div className="mb-5 inline-flex rounded-full border border-sky-200 bg-white px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
-              Client engagement, automated
+              Client Engagement, Automated
             </div>
             <h2
               className="mx-auto mb-5 max-w-3xl text-4xl tracking-tight lg:text-5xl"
               style={{ fontWeight: 780, lineHeight: "1.06", color: "#0A0F1E" }}
             >
-              Your clients should never go silent again.
+              Your Clients Should Never Go Silent Again.
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-600">
               AlmoraX helps MFDs and wealth advisors automate engagement,
@@ -29,9 +29,9 @@ export function FinalCTA() {
 
             <div className="mb-8 flex flex-wrap justify-center gap-3">
               {[
-                { icon: Sparkles, text: "AI automation" },
-                { icon: TrendingUp, text: "Growth workflows" },
-                { icon: Users, text: "Client retention" },
+                { icon: Sparkles, text: "AI Automation" },
+                { icon: TrendingUp, text: "Growth Workflows" },
+                { icon: Users, text: "Client Retention" },
               ].map((item) => (
                 <div
                   key={item.text}

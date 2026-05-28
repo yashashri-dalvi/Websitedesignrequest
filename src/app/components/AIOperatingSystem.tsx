@@ -2,11 +2,11 @@ import { BarChart3, Brain, Database, MessageSquare, Palette, Shield } from "luci
 
 export function AIOperatingSystem() {
   const steps = [
-    { icon: Database, title: "Client signals", copy: "Activity, SIP status, segment, and engagement context." },
-    { icon: Brain, title: "AI detection", copy: "Finds clients who need nudges, education, or reactivation." },
-    { icon: Palette, title: "Campaign creation", copy: "Generates branded, localized communication drafts." },
-    { icon: Shield, title: "Compliance layer", copy: "Adds ARN, disclaimers, and approval-ready states." },
-    { icon: MessageSquare, title: "WhatsApp workflow", copy: "Prepares segmented engagement for advisor approval." },
+    { icon: Database, title: "Client Signals", copy: "Activity, SIP status, segment, and engagement context." },
+    { icon: Brain, title: "AI Detection", copy: "Finds clients who need nudges, education, or reactivation." },
+    { icon: Palette, title: "Campaign Creation", copy: "Generates branded, localized communication drafts." },
+    { icon: Shield, title: "Compliance Layer", copy: "Adds ARN, disclaimers, and approval-ready states." },
+    { icon: MessageSquare, title: "WhatsApp Workflow", copy: "Prepares segmented engagement for advisor approval." },
     { icon: BarChart3, title: "Analytics", copy: "Tracks responses, activity, and campaign effectiveness." },
   ];
 
@@ -17,10 +17,10 @@ export function AIOperatingSystem() {
         <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <div className="mb-4 inline-flex rounded-full border border-sky-200 bg-white px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
-              AI operating system
+              AI Operating System
             </div>
             <h2 className="text-3xl tracking-tight lg:text-5xl" style={{ fontWeight: 760, lineHeight: "1.06", color: "#0A0F1E" }}>
-              A compact growth engine for advisor engagement.
+              A Compact Growth Engine For Advisor Engagement.
             </h2>
           </div>
           <p className="max-w-2xl text-base leading-7 text-slate-600">
@@ -54,14 +54,14 @@ export function AIOperatingSystem() {
             <div className="relative">
               <div className="mb-6 flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-semibold text-slate-500">Live workflow</p>
-                  <h3 className="text-xl font-bold text-[#0A0F1E]">Campaign orchestration</h3>
+                  <p className="text-sm font-semibold text-slate-500">Live Workflow</p>
+                  <h3 className="text-xl font-bold text-[#0A0F1E]">Campaign Orchestration</h3>
                 </div>
                 <span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-bold text-sky-600">Synced</span>
               </div>
 
               <div className="space-y-3">
-                {["Detect inactive SIP clients", "Generate branded campaign", "Apply compliance preview", "Prepare WhatsApp segments"].map((item, i) => (
+                {["Detect Inactive SIP Clients", "Generate Branded Campaign", "Apply Compliance Preview", "Prepare WhatsApp Segments"].map((item, i) => (
                   <div key={item} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-3 transition-all hover:bg-white hover:shadow-md">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-[#8A2BE2] to-[#00B2FF] text-xs font-bold text-white">
                       {i + 1}
@@ -74,7 +74,7 @@ export function AIOperatingSystem() {
               <div className="mt-6 rounded-2xl border border-sky-100 bg-gradient-to-br from-sky-50 via-white to-violet-50 p-4">
                 <p className="text-sm font-semibold text-sky-700">Outcome</p>
                 <p className="mt-1 text-lg font-bold text-[#0A0F1E]">
-                  One advisor-approved WhatsApp campaign, branded and compliance-ready.
+                  One Advisor-Approved WhatsApp Campaign, Branded And Compliance-Ready.
                 </p>
               </div>
             </div>

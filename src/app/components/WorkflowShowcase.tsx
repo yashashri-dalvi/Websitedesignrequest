@@ -2,12 +2,12 @@ import { AlertCircle, Brain, CheckCircle, Send, Shield, Sparkles } from "lucide-
 
 export function WorkflowShowcase() {
   const steps = [
-    { icon: AlertCircle, title: "Client stops SIP", copy: "Activity signal is captured." },
-    { icon: Brain, title: "AI detects inactivity", copy: "Risk and intent are identified." },
-    { icon: Sparkles, title: "Campaign generated", copy: "Localized message is drafted." },
-    { icon: Shield, title: "Branding + compliance", copy: "ARN and disclaimer are applied." },
-    { icon: Send, title: "WhatsApp triggered", copy: "Advisor-approved outreach is prepared." },
-    { icon: CheckCircle, title: "Client re-engages", copy: "Response is tracked in analytics." },
+    { icon: AlertCircle, title: "Client Stops SIP", copy: "Activity signal is captured." },
+    { icon: Brain, title: "AI Detects Inactivity", copy: "Risk and intent are identified." },
+    { icon: Sparkles, title: "Campaign Generated", copy: "Localized message is drafted." },
+    { icon: Shield, title: "Branding + Compliance", copy: "ARN and disclaimer are applied." },
+    { icon: Send, title: "WhatsApp Triggered", copy: "Advisor-approved outreach is prepared." },
+    { icon: CheckCircle, title: "Client Re-Engages", copy: "Response is tracked in analytics." },
   ];
 
   return (
@@ -17,10 +17,10 @@ export function WorkflowShowcase() {
         <div className="mb-10 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
           <div>
             <div className="mb-4 inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
-              Workflow automation
+              Workflow Automation
             </div>
             <h2 className="max-w-3xl text-3xl tracking-tight lg:text-5xl" style={{ fontWeight: 760, lineHeight: "1.06", color: "#0A0F1E" }}>
-              From client signals to WhatsApp engagement.
+              From Client Signals To WhatsApp Engagement.
             </h2>
           </div>
           <p className="max-w-xl text-base leading-7 text-slate-600">

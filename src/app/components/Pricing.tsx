@@ -57,7 +57,7 @@ export function Pricing() {
             className="mb-4 text-4xl tracking-tight lg:text-5xl"
             style={{ fontWeight: 760, lineHeight: "1.06", color: "#0A0F1E" }}
           >
-            Flexible plans for AI automation for mutual fund distributors.
+            Flexible Plans For AI Automation For Mutual Fund Distributors.
           </h2>
           <p className="text-lg leading-8 text-slate-600">
             Start with a guided trial or speak with us for a custom advisor

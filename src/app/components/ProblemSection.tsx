@@ -2,9 +2,9 @@ import { AlertCircle, FileText, FolderOpen, Mail, MessageSquare, Palette, Table 
 
 export function ProblemSection() {
   const pains = [
-    ["Silent SIP pauses", "Clients disengage before advisors can respond."],
-    ["Manual outreach", "WhatsApp follow-ups consume hours every week."],
-    ["Disconnected tools", "Campaigns, data, branding, and compliance live apart."],
+    ["Silent SIP Pauses", "Clients disengage before advisors can respond."],
+    ["Manual Outreach", "WhatsApp follow-ups consume hours every week."],
+    ["Disconnected Tools", "Campaigns, data, branding, and compliance live apart."],
   ];
 
   const tools = [
@@ -21,10 +21,10 @@ export function ProblemSection() {
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
           <div className="mb-4 inline-flex rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-700">
-            MFDs & wealth advisors
+            MFDs & Wealth Advisors
           </div>
           <h2 className="mb-5 text-3xl tracking-tight lg:text-5xl" style={{ fontWeight: 760, lineHeight: "1.06", color: "#0A0F1E" }}>
-            The real problem is not content. It is client activation.
+            The Real Problem Is Not Content. It Is Client Activation.
           </h2>
           <p className="max-w-xl text-base leading-7 text-slate-600">
             AlmoraX gives financial distributors a structured engagement layer
@@ -56,7 +56,7 @@ export function ProblemSection() {
         <div className="mb-5 flex flex-col justify-between gap-3 md:flex-row md:items-end">
           <div>
             <p className="text-sm font-semibold text-slate-500">Today's Reality</p>
-            <h3 className="text-2xl font-bold text-[#0A0F1E]">Fragmented work across too many tools</h3>
+            <h3 className="text-2xl font-bold text-[#0A0F1E]">Fragmented Work Across Too Many Tools</h3>
           </div>
           <p className="max-w-md text-sm leading-6 text-slate-600">
             Advisors switch contexts repeatedly instead of running one clear

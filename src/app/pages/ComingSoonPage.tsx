@@ -25,7 +25,7 @@ export function ComingSoonPage({ type }: ComingSoonPageProps) {
             className="mx-auto mb-6 max-w-3xl text-5xl tracking-tight md:text-6xl"
             style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
           >
-            Advisor growth insights are under development.
+            Advisor Growth Insights Are Under Development.
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-slate-600">
             We are building a practical knowledge hub for MFDs, financial

@@ -20,7 +20,7 @@ export function ContactPage() {
               className="mb-6 text-5xl tracking-tight md:text-6xl"
               style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
             >
-              Build a smarter engagement engine for your advisory practice.
+              Build A Smarter Engagement Engine For Your Advisory Practice.
             </h1>
             <p className="mb-8 max-w-xl text-lg leading-8 text-slate-600">
               Share a few details, queries, or feedback and we'll get back to you.
@@ -57,7 +57,7 @@ export function ContactPage() {
 
           <form className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-[0_28px_90px_rgba(15,23,42,0.10)] md:p-8">
             <div className="mb-8">
-              <h2 className="mb-2 text-2xl font-bold text-slate-950">Send a message</h2>
+              <h2 className="mb-2 text-2xl font-bold text-slate-950">Send A Message</h2>
               <p className="text-sm leading-6 text-slate-600">
                 Share a few details, queries, or feedback and we'll get back to you.
               </p>

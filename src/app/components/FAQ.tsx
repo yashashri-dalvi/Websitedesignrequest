@@ -50,7 +50,7 @@ export function FAQ() {
             className="mb-4 text-4xl tracking-tight lg:text-5xl"
             style={{ fontWeight: 750, lineHeight: "1.06", color: "#0A0F1E" }}
           >
-            Clear answers for serious advisor teams.
+            Clear Answers For Serious Advisor Teams.
           </h2>
           <p className="max-w-md text-base leading-7 text-slate-600">
             A compact overview of how AlmoraX supports campaign automation,
