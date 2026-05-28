@@ -48,7 +48,7 @@ export function FAQ() {
           </div>
           <h2
             className="mb-4 text-4xl tracking-tight lg:text-5xl"
-            style={{ fontWeight: 750, lineHeight: "1.06", color: "#061526" }}
+            style={{ fontWeight: 750, lineHeight: "1.06", color: "#0A0F1E" }}
           >
             Clear answers for serious advisor teams.
           </h2>
@@ -80,5 +80,6 @@ export function FAQ() {
     </section>
   );
 }
+
 
 

@@ -1,179 +1,145 @@
-﻿import { Button } from "./ui/button";
-import { Play, TrendingUp, Users, MessageSquare, Calendar, Zap, BarChart3 } from "lucide-react";
+import { BarChart3, Calendar, MessageSquare, Play, ShieldCheck, Sparkles, Users, Zap } from "lucide-react";
+import { Button } from "./ui/button";
+
+const calendlyUrl = "https://calendly.com/yashashri-almorax/30min";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-36 pb-20 px-6 bg-gradient-to-b from-white to-slate-50/50">
-      <div className="absolute left-8 top-28 h-72 w-72 rounded-full bg-violet-200/25 blur-3xl" />
-      <div className="absolute right-12 top-36 h-80 w-80 rounded-full bg-sky-200/30 blur-3xl" />
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column - Content */}
-          <div className="space-y-8 relative z-10 animate-fade-up">
-            <div className="space-y-6">
-              <div className="inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
-                AI automation for MFD growth
-              </div>
-              <h1 
-                className="text-5xl lg:text-6xl tracking-tight"
-                style={{ 
-                  fontWeight: 700, 
-                  lineHeight: '1.1',
-                  color: '#061526',
-                  letterSpacing: '-0.02em'
-                }}
-              >
-                Revive Silent Clients.
-                <br />
-                Automate Engagement.
-                <br />
-                <span style={{ color: '#0EA5E9' }}>Grow AUM.</span>
-              </h1>
-              
-              <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
-                AlmoraX helps MFDs and wealth advisors automate client activation, WhatsApp engagement, 
-                campaign workflows, branding, and compliance - all from one intelligent AI system built for financial distribution.
-              </p>
-            </div>
-            
-            <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg"
-                style={{ 
-                  background: 'linear-gradient(135deg, #8B5CF6, #0EA5E9)', 
-                  color: 'white',
-                  paddingLeft: '2rem',
-                  paddingRight: '2rem',
-                  height: '3rem'
-                }}
-              >
-                Book Demo
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                style={{
-                  height: '3rem',
-                  paddingLeft: '2rem',
-                  paddingRight: '2rem'
-                }}
-              >
-                <Play className="w-4 h-4 mr-2" />
-                Watch Product Tour
-              </Button>
-            </div>
-            
-            <div className="flex items-center gap-8 pt-4">
+    <section className="relative overflow-hidden bg-white px-6 pb-16 pt-32">
+      <div className="absolute left-8 top-24 h-72 w-72 rounded-full bg-[#8A2BE2]/15 blur-3xl" />
+      <div className="absolute right-8 top-24 h-80 w-80 rounded-full bg-[#00B2FF]/20 blur-3xl" />
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.92fr_1.08fr]">
+        <div className="animate-fade-up">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
+            <Sparkles className="h-4 w-4" />
+            AI automation for MFD growth
+          </div>
+
+          <h1
+            className="max-w-3xl text-5xl tracking-tight lg:text-6xl"
+            style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
+          >
+            Revive Silent Clients. Automate Engagement.{" "}
+            <span className="bg-gradient-to-r from-[#8A2BE2] via-[#6A3DFF] to-[#00B2FF] bg-clip-text text-transparent">
+              Grow AUM.
+            </span>
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            AlmoraX helps MFDs, financial distributors, and wealth advisors run
+            branded, compliance-friendly WhatsApp campaigns from one intelligent
+            growth workspace.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Button
+              size="lg"
+              onClick={() => window.open(calendlyUrl, "_blank", "noopener,noreferrer")}
+              className="h-12 rounded-xl px-7 shadow-xl shadow-sky-500/20 transition-all hover:-translate-y-0.5"
+              style={{ background: "linear-gradient(135deg, #8A2BE2, #6A3DFF, #00B2FF)", color: "white" }}
+            >
+              Book Demo
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="h-12 rounded-xl border-slate-200 px-7 transition-all hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50"
+            >
+              <Play className="mr-2 h-4 w-4" />
+              Watch Product Tour
+            </Button>
+          </div>
+        </div>
+
+        <div className="relative animate-float-slow">
+          <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#8A2BE2]/20 via-transparent to-[#00B2FF]/20 blur-2xl" />
+          <div className="relative rounded-[2rem] border border-slate-200 bg-white p-5 shadow-[0_30px_100px_rgba(10,15,30,0.14)]">
+            <div className="mb-5 flex items-center justify-between">
               <div>
-                <div className="text-2xl" style={{ fontWeight: 700, color: '#061526' }}>10,000+</div>
-                <div className="text-sm text-slate-600">Advisor Workflows</div>
+                <p className="text-sm font-semibold text-slate-500">Advisor Growth Console</p>
+                <h3 className="text-xl font-bold text-[#0A0F1E]">Client Activation Center</h3>
               </div>
-              <div className="h-12 w-px bg-slate-300" />
-              <div>
-                <div className="text-2xl" style={{ fontWeight: 700, color: '#061526' }}>500Cr+</div>
-                <div className="text-sm text-slate-600">AUM Engagement Signals</div>
+              <div className="rounded-full bg-gradient-to-r from-[#8A2BE2] to-[#00B2FF] px-3 py-1.5 text-xs font-bold text-white shadow-lg">
+                AI Powered
+              </div>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl border border-red-100 bg-red-50/70 p-4 transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white">
+                    <Users className="h-5 w-5 text-red-500" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-[#0A0F1E]">Inactive Clients</p>
+                    <p className="text-xs text-slate-500">12 need attention</p>
+                  </div>
+                </div>
+                <div className="h-2 rounded-full bg-red-100">
+                  <div className="h-full w-2/3 rounded-full bg-red-500" />
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-sky-100 bg-sky-50/80 p-4 transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white">
+                    <MessageSquare className="h-5 w-5 text-sky-500" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-[#0A0F1E]">WhatsApp Ready</p>
+                    <p className="text-xs text-slate-500">245 recipients</p>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <span className="h-7 flex-1 rounded-full bg-white" />
+                  <span className="h-7 w-16 rounded-full bg-[#00B2FF]" />
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-violet-100 bg-violet-50/70 p-4 transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white">
+                    <Calendar className="h-5 w-5 text-violet-600" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-[#0A0F1E]">Campaign Planner</p>
+                    <p className="text-xs text-slate-500">3 drafts scheduled</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-4 gap-2">
+                  {[60, 90, 45, 75].map((height) => (
+                    <div key={height} className="flex h-16 items-end rounded-lg bg-white p-1">
+                      <div
+                        className="w-full rounded-md bg-gradient-to-t from-[#8A2BE2] to-[#00B2FF]"
+                        style={{ height: `${height}%` }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="h-5 w-5 text-[#8A2BE2]" />
+                    <span className="text-sm font-bold text-[#0A0F1E]">Compliance</span>
+                  </div>
+                  <Zap className="h-4 w-4 text-[#00B2FF]" />
+                </div>
+                <div className="space-y-2">
+                  <div className="h-2 rounded-full bg-white" />
+                  <div className="h-2 w-4/5 rounded-full bg-white" />
+                  <div className="h-8 rounded-xl bg-white" />
+                </div>
               </div>
             </div>
           </div>
-          
-          {/* Right Column - Dashboard Visual */}
-          <div className="relative animate-float-slow">
-            {/* Main Dashboard Card */}
-            <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 relative">
-              {/* Header */}
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <h3 className="text-sm text-slate-600">AI Dashboard</h3>
-                  <p className="text-xl" style={{ fontWeight: 600, color: '#061526' }}>Client Activation Center</p>
-                </div>
-                <div className="flex items-center gap-2 px-3 py-1.5 bg-emerald-50 rounded-full">
-                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                  <span className="text-sm" style={{ fontWeight: 500, color: '#8B5CF6' }}>Live</span>
-                </div>
-              </div>
-              
-              {/* Inactive Client Alert */}
-              <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-4">
-                <div className="flex items-start justify-between">
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
-                      <Users className="w-5 h-5 text-red-600" />
-                    </div>
-                    <div>
-                      <p className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>12 Inactive Clients Detected</p>
-                      <p className="text-xs text-slate-600 mt-1">Last activity: 45+ days ago</p>
-                    </div>
-                  </div>
-                  <Button 
-                    size="sm" 
-                    style={{ background: 'linear-gradient(135deg, #8B5CF6, #0EA5E9)', color: 'white', fontSize: '0.75rem' }}
-                  >
-                    Activate
-                  </Button>
-                </div>
-              </div>
-              
-              {/* WhatsApp Campaign */}
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <MessageSquare className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>WhatsApp Campaign Ready</p>
-                      <Zap className="w-4 h-4 text-blue-600" />
-                    </div>
-                    <p className="text-xs text-slate-600">Diwali SIP Revival Campaign - 245 recipients</p>
-                    <div className="mt-3 flex gap-2">
-                      <div className="flex-1 h-1.5 bg-blue-200 rounded-full">
-                        <div className="w-3/4 h-full bg-blue-600 rounded-full" />
-                      </div>
-                      <span className="text-xs text-slate-600">75%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Campaign Planner */}
-              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <Calendar className="w-5 h-5 text-emerald-600" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>AI Campaign Suggestions</p>
-                    <div className="mt-2 space-y-2">
-                      <div className="text-xs text-slate-700 flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
-                        Tax-saving reminder (Due: Jan 31)
-                      </div>
-                      <div className="text-xs text-slate-700 flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
-                        SIP step-up recommendation
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Floating Analytics Card */}
-            <div className="absolute -right-4 -bottom-4 bg-white rounded-xl shadow-lg border border-slate-200 p-4 w-48">
-              <div className="flex items-center gap-2 mb-3">
-                <BarChart3 className="w-4 h-4 text-emerald-600" />
-                <span className="text-xs" style={{ fontWeight: 600, color: '#061526' }}>Engagement Up</span>
-              </div>
-              <div className="text-2xl" style={{ fontWeight: 700, color: '#8B5CF6' }}>+34%</div>
-              <div className="text-xs text-slate-600">vs last month</div>
-            </div>
-            
-            {/* Floating AI Badge */}
-            <div className="absolute -left-4 top-8 bg-gradient-to-r from-[#8B5CF6] to-[#0EA5E9] text-white rounded-full px-4 py-2 shadow-lg">
-              <div className="flex items-center gap-2">
-                <TrendingUp className="w-4 h-4" />
-                <span className="text-xs" style={{ fontWeight: 600 }}>AI-Powered</span>
-              </div>
+
+          <div className="absolute -bottom-5 right-6 hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-xl md:block">
+            <div className="flex items-center gap-2">
+              <BarChart3 className="h-4 w-4 text-[#00B2FF]" />
+              <span className="text-xs font-bold text-slate-700">Engagement +34%</span>
             </div>
           </div>
         </div>
@@ -181,5 +147,3 @@ export function Hero() {
     </section>
   );
 }
-
-

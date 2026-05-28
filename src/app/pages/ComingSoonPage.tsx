@@ -17,7 +17,7 @@ export function ComingSoonPage({ type }: ComingSoonPageProps) {
         <div className="absolute right-10 top-56 h-72 w-72 rounded-full bg-violet-200/30 blur-3xl" />
 
         <section className="relative mx-auto max-w-5xl rounded-[2rem] border border-slate-200 bg-white p-8 text-center shadow-[0_28px_90px_rgba(15,23,42,0.10)] md:p-14">
-          <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8B5CF6] to-[#0EA5E9] shadow-xl shadow-sky-500/20">
+          <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8A2BE2] to-[#00B2FF] shadow-xl shadow-sky-500/20">
             <Sparkles className="h-8 w-8 text-white" />
           </div>
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-sky-600">
@@ -25,7 +25,7 @@ export function ComingSoonPage({ type }: ComingSoonPageProps) {
           </p>
           <h1
             className="mx-auto mb-6 max-w-3xl text-5xl tracking-tight md:text-6xl"
-            style={{ fontWeight: 780, lineHeight: "1.02", color: "#061526" }}
+            style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
           >
             {isBlog ? "Advisor growth insights are under development." : "The AlmoraX careers page is under development."}
           </h1>
@@ -47,5 +47,6 @@ export function ComingSoonPage({ type }: ComingSoonPageProps) {
     </div>
   );
 }
+
 
 

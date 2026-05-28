@@ -8,7 +8,7 @@ export function FeaturesGrid() {
       description:
         "Plan monthly investor touchpoints, SIP nudges, tax-saving reminders, and festival campaigns from one organized calendar.",
       visual: "Calendar",
-      accent: "from-[#8B5CF6] to-[#0EA5E9]",
+      accent: "from-[#8A2BE2] to-[#00B2FF]",
       details: ["Recurring schedules", "AI campaign drafts", "Investor-ready reminders"],
     },
     {
@@ -17,7 +17,7 @@ export function FeaturesGrid() {
       description:
         "Apply disclaimers, risk language, ARN details, and approval-ready communication checks before campaigns go out.",
       visual: "Verified",
-      accent: "from-[#0EA5E9] to-[#0EA5E9]",
+      accent: "from-[#00B2FF] to-[#00B2FF]",
       details: ["ARN placement", "Disclaimer blocks", "Approval states"],
     },
     {
@@ -26,7 +26,7 @@ export function FeaturesGrid() {
       description:
         "Turn every message into a professional advisor-branded asset with consistent identity, logo placement, and tone.",
       visual: "Brand Kit",
-      accent: "from-[#8B5CF6] to-[#C084FC]",
+      accent: "from-[#8A2BE2] to-[#C084FC]",
       details: ["Logo lockups", "Advisor identity", "Premium templates"],
     },
     {
@@ -35,7 +35,7 @@ export function FeaturesGrid() {
       description:
         "Prepare segmented WhatsApp campaigns for client groups and reduce manual follow-ups with structured workflows.",
       visual: "WhatsApp",
-      accent: "from-[#0EA5E9] to-[#22C55E]",
+      accent: "from-[#00B2FF] to-[#22C55E]",
       details: ["Client groups", "One-tap sends", "Follow-up flows"],
     },
     {
@@ -44,18 +44,18 @@ export function FeaturesGrid() {
       description:
         "Measure engagement, campaign response, inactive-client recovery, and growth signals in a clean advisor dashboard.",
       visual: "Insights",
-      accent: "from-[#0EA5E9] to-[#8B5CF6]",
+      accent: "from-[#00B2FF] to-[#8A2BE2]",
       details: ["Engagement metrics", "Campaign performance", "Recovery signals"],
     },
   ];
 
   return (
-    <section id="features" className="relative overflow-hidden bg-white px-6 py-24">
+    <section id="features" className="relative overflow-hidden bg-white px-6 py-16">
       <div className="absolute left-1/2 top-12 h-80 w-80 -translate-x-1/2 rounded-full bg-sky-200/30 blur-3xl" />
       <div className="absolute right-0 top-80 h-72 w-72 rounded-full bg-violet-200/30 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+        <div className="mx-auto mb-10 max-w-3xl text-center">
           <div className="mb-4 inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
             Advisor growth stack
           </div>
@@ -64,7 +64,7 @@ export function FeaturesGrid() {
             style={{
               fontWeight: 750,
               lineHeight: "1.06",
-              color: "#061526",
+              color: "#0A0F1E",
               letterSpacing: "-0.02em",
             }}
           >
@@ -76,11 +76,11 @@ export function FeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-5">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (
             <article
               key={feature.title}
-              className={`group relative min-h-[420px] overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-[0_28px_80px_rgba(14,165,233,0.18)] ${
+              className={`group relative min-h-[330px] overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-[0_28px_80px_rgba(14,165,233,0.18)] ${
                 i === 0 ? "lg:col-span-2" : ""
               }`}
             >
@@ -103,7 +103,7 @@ export function FeaturesGrid() {
                 {feature.description}
               </p>
 
-              <div className="mb-6 rounded-2xl border border-slate-200 bg-slate-50/80 p-4">
+              <div className="mb-5 rounded-2xl border border-slate-200 bg-slate-50/80 p-4">
                 <div className="mb-3 flex items-end gap-2">
                   <div className={`h-16 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent}`} />
                   <div className={`h-10 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent} opacity-70`} />
@@ -131,5 +131,6 @@ export function FeaturesGrid() {
     </section>
   );
 }
+
 
 

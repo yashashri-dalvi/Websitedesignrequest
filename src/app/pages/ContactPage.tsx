@@ -18,27 +18,25 @@ export function ContactPage() {
             </div>
             <h1
               className="mb-6 text-5xl tracking-tight md:text-6xl"
-              style={{ fontWeight: 780, lineHeight: "1.02", color: "#061526" }}
+              style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
             >
               Build a smarter engagement engine for your advisory practice.
             </h1>
             <p className="mb-8 max-w-xl text-lg leading-8 text-slate-600">
-              Tell us about your distribution setup, client engagement goals, and
-              automation needs. The AlmoraX team will help you explore the right
-              workflow for your business.
+              Share a few details, queries, or feedback and we'll get back to you.
             </p>
 
             <div className="grid gap-4">
               <a
-                href="mailto:yashash@almorax.com"
+                href="mailto:yashashri@almorax.com"
                 className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#8B5CF6] to-[#0EA5E9]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#8A2BE2] to-[#00B2FF]">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-slate-500">Email</div>
-                  <div className="font-bold text-slate-950">yashash@almorax.com</div>
+                  <div className="font-bold text-slate-950">yashashri@almorax.com</div>
                 </div>
               </a>
 
@@ -47,8 +45,8 @@ export function ContactPage() {
                   <ShieldCheck className="h-6 w-6 text-sky-600" />
                 </div>
                 <p className="text-sm leading-6 text-slate-600">
-                  We respond with professional business context only. No chatbot
-                  routing, no phone collection, and no unnecessary sales clutter.
+                  We respond with professional business context only, without
+                  phone collection or unnecessary sales clutter.
                 </p>
               </div>
             </div>
@@ -58,8 +56,7 @@ export function ContactPage() {
             <div className="mb-8">
               <h2 className="mb-2 text-2xl font-bold text-slate-950">Send a message</h2>
               <p className="text-sm leading-6 text-slate-600">
-                Share a few details and we will get back to you at
-                <span className="font-semibold text-slate-900"> yashash@almorax.com</span>.
+                Share a few details, queries, or feedback and we'll get back to you.
               </p>
             </div>
 
@@ -85,7 +82,7 @@ export function ContactPage() {
             <Button
               type="button"
               className="mt-6 h-12 w-full gap-2 shadow-lg shadow-sky-500/20"
-              style={{ background: "linear-gradient(135deg, #8B5CF6, #0EA5E9)", color: "white" }}
+              style={{ background: "linear-gradient(135deg, #8A2BE2, #00B2FF)", color: "white" }}
             >
               Send Message
               <Send className="h-4 w-4" />
@@ -97,5 +94,6 @@ export function ContactPage() {
     </div>
   );
 }
+
 
 

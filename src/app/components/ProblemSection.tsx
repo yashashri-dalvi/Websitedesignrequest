@@ -1,124 +1,83 @@
-﻿import { AlertCircle, FileText, MessageSquare, Table, Mail, FolderOpen, Palette } from "lucide-react";
+import { AlertCircle, FileText, FolderOpen, Mail, MessageSquare, Palette, Table } from "lucide-react";
 
 export function ProblemSection() {
+  const pains = [
+    ["Silent SIP pauses", "Clients disengage before advisors can respond."],
+    ["Manual outreach", "WhatsApp follow-ups consume hours every week."],
+    ["Disconnected tools", "Campaigns, data, branding, and compliance live apart."],
+  ];
+
   const tools = [
     { icon: MessageSquare, label: "WhatsApp", color: "#25D366" },
     { icon: FileText, label: "PDFs", color: "#DC2626" },
-    { icon: Palette, label: "Canva", color: "#8B5CF6" },
-    { icon: Table, label: "Spreadsheets", color: "#8B5CF6" },
-    { icon: Mail, label: "Email", color: "#0EA5E9" },
+    { icon: Palette, label: "Canva", color: "#8A2BE2" },
+    { icon: Table, label: "Sheets", color: "#00B2FF" },
+    { icon: Mail, label: "Email", color: "#2563EB" },
     { icon: FolderOpen, label: "CRM", color: "#F59E0B" },
   ];
 
   return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Headline */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 
-            className="text-4xl lg:text-5xl mb-6 tracking-tight"
-            style={{ 
-              fontWeight: 700, 
-              lineHeight: '1.1',
-              color: '#061526',
-              letterSpacing: '-0.02em'
-            }}
-          >
-            MFDs and Wealth Advisors Don't Have a Content Problem.
-            <br />
-            <span style={{ color: '#0EA5E9' }}>They Have an Activation Problem.</span>
+    <section className="bg-white px-6 py-16">
+      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div>
+          <div className="mb-4 inline-flex rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-700">
+            MFDs & wealth advisors
+          </div>
+          <h2 className="mb-5 text-3xl tracking-tight lg:text-5xl" style={{ fontWeight: 760, lineHeight: "1.06", color: "#0A0F1E" }}>
+            The real problem is not content. It is client activation.
           </h2>
+          <p className="max-w-xl text-base leading-7 text-slate-600">
+            AlmoraX gives financial distributors a structured engagement layer
+            for client follow-ups, campaign planning, branded communication, and
+            compliance-friendly distribution.
+          </p>
         </div>
 
-        {/* Pain Points Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {[
-            {
-              icon: AlertCircle,
-              title: "Clients Stopping SIPs Silently",
-              description: "No notification system to detect when clients pause or stop their investments"
-            },
-            {
-              icon: MessageSquare,
-              title: "Manual WhatsApp Outreach",
-              description: "Spending hours every day sending individual messages to clients"
-            },
-            {
-              icon: FileText,
-              title: "No Follow-Up Systems",
-              description: "Missing critical follow-ups leading to client disengagement"
-            },
-            {
-              icon: Table,
-              title: "Operational Overload",
-              description: "Juggling multiple tasks with no automation or intelligent assistance"
-            },
-            {
-              icon: FolderOpen,
-              title: "Disconnected Tools",
-              description: "Data scattered across platforms with no unified workflow"
-            },
-            {
-              icon: Mail,
-              title: "Inconsistent Engagement",
-              description: "Unable to maintain regular, personalized client communication"
-            }
-          ].map((item, i) => (
-            <div 
-              key={i}
-              className="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-slate-300 transition-colors"
+        <div className="grid gap-4 md:grid-cols-3">
+          {pains.map(([title, description], i) => (
+            <article
+              key={title}
+              className="group rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl"
             >
-              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                <item.icon className="w-6 h-6 text-red-600" />
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8A2BE2] to-[#00B2FF] text-white shadow-lg shadow-sky-500/20">
+                <AlertCircle className="h-5 w-5" />
               </div>
-              <h3 className="text-base mb-2" style={{ fontWeight: 600, color: '#061526' }}>
-                {item.title}
-              </h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                {item.description}
-              </p>
-            </div>
+              <h3 className="mb-2 font-bold text-[#0A0F1E]">{title}</h3>
+              <p className="text-sm leading-6 text-slate-600">{description}</p>
+              <div className="mt-4 h-1 rounded-full bg-slate-100">
+                <div className="h-full rounded-full bg-gradient-to-r from-[#8A2BE2] to-[#00B2FF] transition-all duration-500 group-hover:w-full" style={{ width: `${45 + i * 18}%` }} />
+              </div>
+            </article>
           ))}
         </div>
+      </div>
 
-        {/* Fragmented Workflow Visualization */}
-        <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 lg:p-12 border border-slate-200">
-          <div className="text-center mb-8">
-            <p className="text-sm text-slate-600 mb-2">Today's Reality</p>
-            <h3 className="text-2xl" style={{ fontWeight: 700, color: '#061526' }}>
-              Chaotic, Fragmented Workflow
-            </h3>
+      <div className="mx-auto mt-10 max-w-7xl rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-5 shadow-[0_18px_60px_rgba(10,15,30,0.06)] md:p-7">
+        <div className="mb-5 flex flex-col justify-between gap-3 md:flex-row md:items-end">
+          <div>
+            <p className="text-sm font-semibold text-slate-500">Today's Reality</p>
+            <h3 className="text-2xl font-bold text-[#0A0F1E]">Fragmented work across too many tools</h3>
           </div>
-          
-          <div className="flex flex-wrap justify-center items-center gap-4 mb-8">
-            {tools.map((tool, i) => (
-              <div key={i} className="relative">
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-200 flex flex-col items-center gap-2">
-                  <tool.icon className="w-8 h-8" style={{ color: tool.color }} />
-                  <span className="text-xs" style={{ fontWeight: 500, color: '#061526' }}>
-                    {tool.label}
-                  </span>
-                </div>
-                {i < tools.length - 1 && (
-                  <div className="hidden md:block absolute -right-3 top-1/2 transform -translate-y-1/2 text-slate-400">
-                    →
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+          <p className="max-w-md text-sm leading-6 text-slate-600">
+            Advisors switch contexts repeatedly instead of running one clear
+            engagement workflow.
+          </p>
+        </div>
 
-          <div className="text-center">
-            <div className="inline-block bg-white rounded-xl px-6 py-3 shadow-lg border-2 border-blue-600">
-              <p className="text-sm" style={{ fontWeight: 600, color: '#0EA5E9' }}>
-                ↓ Switch to One AI Operating System ↓
-              </p>
+        <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {tools.map((tool, i) => (
+            <div
+              key={tool.label}
+              className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              style={{ animationDelay: `${i * 70}ms` }}
+            >
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#8A2BE2] to-[#00B2FF] opacity-0 transition-opacity group-hover:opacity-100" />
+              <tool.icon className="mx-auto mb-3 h-7 w-7 transition-transform group-hover:scale-110" style={{ color: tool.color }} />
+              <span className="text-sm font-bold text-[#0A0F1E]">{tool.label}</span>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
-

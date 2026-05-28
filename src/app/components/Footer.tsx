@@ -1,4 +1,4 @@
-﻿import { Linkedin, Mail, Twitter } from "lucide-react";
+﻿import { Linkedin, Mail } from "lucide-react";
 import { Logo } from "./Logo";
 
 export function Footer() {
@@ -32,9 +32,8 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               {[
-                { icon: Linkedin, label: "LinkedIn", href: "#" },
-                { icon: Twitter, label: "Twitter", href: "#" },
-                { icon: Mail, label: "Email", href: "mailto:yashash@almorax.com" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/almorax/about/" },
+                { icon: Mail, label: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=yashashri@almorax.com" },
               ].map((item) => (
                 <a
                   key={item.label}
@@ -89,5 +88,7 @@ export function Footer() {
     </footer>
   );
 }
+
+
 
 

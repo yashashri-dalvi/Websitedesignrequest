@@ -1,145 +1,84 @@
-﻿import { Database, Brain, Palette, Shield, MessageSquare, BarChart3 } from "lucide-react";
+import { BarChart3, Brain, Database, MessageSquare, Palette, Shield } from "lucide-react";
 
 export function AIOperatingSystem() {
-  const workflowSteps = [
-    {
-      icon: Database,
-      title: "Client Data / Signals",
-      description: "Continuous monitoring of client behavior and investment patterns"
-    },
-    {
-      icon: Brain,
-      title: "AI Detection Engine",
-      description: "Intelligent analysis identifies inactive clients and opportunities"
-    },
-    {
-      icon: Palette,
-      title: "Localized Campaign Creation",
-      description: "AI generates culturally relevant, personalized campaigns"
-    },
-    {
-      icon: Palette,
-      title: "Advisor Branding Applied",
-      description: "Automatic application of your logo, ARN, and brand identity"
-    },
-    {
-      icon: Shield,
-      title: "Compliance Added",
-      description: "SEBI-compliant disclaimers and regulatory requirements integrated"
-    },
-    {
-      icon: MessageSquare,
-      title: "One-Tap WhatsApp Distribution",
-      description: "Instant campaign delivery to segmented client groups"
-    },
-    {
-      icon: BarChart3,
-      title: "Engagement Analytics",
-      description: "Real-time tracking of client responses and campaign performance"
-    }
+  const steps = [
+    { icon: Database, title: "Client signals", copy: "Activity, SIP status, segment, and engagement context." },
+    { icon: Brain, title: "AI detection", copy: "Finds clients who need nudges, education, or reactivation." },
+    { icon: Palette, title: "Campaign creation", copy: "Generates branded, localized communication drafts." },
+    { icon: Shield, title: "Compliance layer", copy: "Adds ARN, disclaimers, and approval-ready states." },
+    { icon: MessageSquare, title: "WhatsApp workflow", copy: "Prepares segmented engagement for advisor approval." },
+    { icon: BarChart3, title: "Analytics", copy: "Tracks responses, activity, and campaign effectiveness." },
   ];
 
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-white to-slate-50">
-      <div className="max-w-7xl mx-auto">
-        {/* Headline */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 
-            className="text-4xl lg:text-5xl mb-6 tracking-tight"
-            style={{ 
-              fontWeight: 700, 
-              lineHeight: '1.1',
-              color: '#061526',
-              letterSpacing: '-0.02em'
-            }}
-          >
-            The AI Operating System
-            <br />
-            <span style={{ color: '#0EA5E9' }}>for Advisor Growth</span>
-          </h2>
-          <p className="text-lg text-slate-600 leading-relaxed">
-            AlmoraX transforms engagement into an automated growth engine with intelligent 
-            workflows that work 24/7 to keep your clients active.
+    <section className="relative overflow-hidden bg-gradient-to-b from-white to-slate-50 px-6 py-16">
+      <div className="absolute right-10 top-20 h-64 w-64 rounded-full bg-[#00B2FF]/15 blur-3xl" />
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div>
+            <div className="mb-4 inline-flex rounded-full border border-sky-200 bg-white px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
+              AI operating system
+            </div>
+            <h2 className="text-3xl tracking-tight lg:text-5xl" style={{ fontWeight: 760, lineHeight: "1.06", color: "#0A0F1E" }}>
+              A compact growth engine for advisor engagement.
+            </h2>
+          </div>
+          <p className="max-w-2xl text-base leading-7 text-slate-600">
+            Replace scattered manual tasks with a connected operating layer that
+            plans campaigns, applies branding, checks compliance, and measures
+            engagement outcomes.
           </p>
         </div>
 
-        {/* Workflow Architecture */}
-        <div className="max-w-4xl mx-auto">
-          <div className="relative">
-            {/* Vertical connector line */}
-            <div className="absolute left-8 top-12 bottom-12 w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-emerald-500" />
-            
-            <div className="space-y-6">
-              {workflowSteps.map((step, i) => (
-                <div key={i} className="relative">
-                  <div className="flex items-start gap-6">
-                    {/* Icon with connector */}
-                    <div className="relative z-10">
-                      <div 
-                        className="w-16 h-16 rounded-xl flex items-center justify-center shadow-lg"
-                        style={{ 
-                          backgroundColor: i < 2 ? '#0EA5E9' : i < 5 ? '#3B82F6' : '#8B5CF6'
-                        }}
-                      >
-                        <step.icon className="w-8 h-8 text-white" />
-                      </div>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1 bg-white rounded-xl p-6 shadow-md border border-slate-200">
-                      <h3 className="text-lg mb-2" style={{ fontWeight: 600, color: '#061526' }}>
-                        {step.title}
-                      </h3>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
+        <div className="grid gap-5 lg:grid-cols-[1fr_0.9fr]">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {steps.map((step, i) => (
+              <article
+                key={step.title}
+                className="group rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl"
+              >
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8A2BE2] via-[#6A3DFF] to-[#00B2FF] shadow-lg shadow-sky-500/20">
+                    <step.icon className="h-6 w-6 text-white" />
                   </div>
-                  
-                  {/* Arrow connector */}
-                  {i < workflowSteps.length - 1 && (
-                    <div className="absolute left-8 -bottom-3 flex items-center justify-center w-16">
-                      <div className="text-2xl text-blue-500">↓</div>
-                    </div>
-                  )}
+                  <span className="text-xs font-bold text-slate-300">0{i + 1}</span>
                 </div>
-              ))}
+                <h3 className="mb-2 font-bold text-[#0A0F1E]">{step.title}</h3>
+                <p className="text-sm leading-6 text-slate-600">{step.copy}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-[0_24px_80px_rgba(10,15,30,0.10)]">
+            <div className="absolute -right-12 -top-12 h-44 w-44 rounded-full bg-[#8A2BE2]/15 blur-2xl" />
+            <div className="relative">
+              <div className="mb-6 flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-semibold text-slate-500">Live workflow</p>
+                  <h3 className="text-xl font-bold text-[#0A0F1E]">Campaign orchestration</h3>
+                </div>
+                <span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-bold text-sky-600">Synced</span>
+              </div>
+
+              <div className="space-y-3">
+                {["Detect inactive SIP clients", "Generate branded campaign", "Apply compliance preview", "Prepare WhatsApp segments"].map((item, i) => (
+                  <div key={item} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-3 transition-all hover:bg-white hover:shadow-md">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-[#8A2BE2] to-[#00B2FF] text-xs font-bold text-white">
+                      {i + 1}
+                    </div>
+                    <span className="text-sm font-semibold text-slate-700">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 rounded-2xl bg-[#0A0F1E] p-4 text-white">
+                <p className="text-sm font-semibold text-sky-200">Outcome</p>
+                <p className="mt-1 text-lg font-bold">One advisor-approved campaign, ready to send.</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Key Benefits */}
-        <div className="grid md:grid-cols-3 gap-6 mt-20">
-          {[
-            {
-              title: "Client Activation Infrastructure",
-              description: "Automatically detect and re-engage inactive clients before they churn"
-            },
-            {
-              title: "Campaign Intelligence Engine",
-              description: "AI-powered content creation that resonates with Indian investors"
-            },
-            {
-              title: "Growth Automation Layer",
-              description: "Turn hours of manual work into one-tap automated workflows"
-            }
-          ].map((benefit, i) => (
-            <div 
-              key={i}
-              className="bg-white rounded-xl p-6 border-2 border-blue-100 hover:border-blue-300 transition-colors"
-            >
-              <h4 className="text-base mb-3" style={{ fontWeight: 600, color: '#0EA5E9' }}>
-                {benefit.title}
-              </h4>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                {benefit.description}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
   );
 }
-
-

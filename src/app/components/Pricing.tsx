@@ -70,13 +70,13 @@ export function Pricing() {
             style={{ 
               fontWeight: 700, 
               lineHeight: '1.1',
-              color: '#061526',
+              color: '#0A0F1E',
               letterSpacing: '-0.02em'
             }}
           >
             Simple, Transparent
             <br />
-            <span style={{ color: '#0EA5E9' }}>Pricing</span>
+            <span style={{ color: '#00B2FF' }}>Pricing</span>
           </h2>
           <p className="text-lg text-slate-600">
             Choose the plan that fits your practice. Upgrade or downgrade anytime.
@@ -97,14 +97,14 @@ export function Pricing() {
               {plan.popular && (
                 <Badge 
                   className="absolute -top-3 left-1/2 transform -translate-x-1/2 px-4 py-1"
-                  style={{ backgroundColor: '#0EA5E9', color: 'white' }}
+                  style={{ backgroundColor: '#00B2FF', color: 'white' }}
                 >
                   Most Popular
                 </Badge>
               )}
               
               <div className="text-center mb-8">
-                <h3 className="text-2xl mb-2" style={{ fontWeight: 700, color: '#061526' }}>
+                <h3 className="text-2xl mb-2" style={{ fontWeight: 700, color: '#0A0F1E' }}>
                   {plan.name}
                 </h3>
                 <p className="text-sm text-slate-600 mb-6">
@@ -114,7 +114,7 @@ export function Pricing() {
                 <div className="mb-2">
                   <span 
                     className="text-4xl tracking-tight"
-                    style={{ fontWeight: 700, color: '#061526' }}
+                    style={{ fontWeight: 700, color: '#0A0F1E' }}
                   >
                     {plan.price}
                   </span>
@@ -127,7 +127,7 @@ export function Pricing() {
                 size="lg"
                 variant={plan.popular ? "default" : "outline"}
                 style={plan.popular ? { 
-                  backgroundColor: '#0EA5E9', 
+                  backgroundColor: '#00B2FF', 
                   color: 'white' 
                 } : {}}
               >
@@ -168,5 +168,6 @@ export function Pricing() {
     </section>
   );
 }
+
 
 
