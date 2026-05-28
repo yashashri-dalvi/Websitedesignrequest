@@ -1,11 +1,11 @@
-import { BarChart3, Calendar, MessageSquare, Play, ShieldCheck, Sparkles, Users, Zap } from "lucide-react";
+import { BarChart3, Calendar, MessageSquare, ShieldCheck, Sparkles, Users, Zap } from "lucide-react";
 import { Button } from "./ui/button";
 
 const calendlyUrl = "https://calendly.com/yashashri-almorax/30min";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white px-6 pb-16 pt-32">
+    <section className="relative overflow-hidden bg-white px-6 pb-16 pt-36">
       <div className="absolute left-8 top-24 h-72 w-72 rounded-full bg-[#8A2BE2]/15 blur-3xl" />
       <div className="absolute right-8 top-24 h-80 w-80 rounded-full bg-[#00B2FF]/20 blur-3xl" />
 
@@ -13,23 +13,23 @@ export function Hero() {
         <div className="animate-fade-up">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
             <Sparkles className="h-4 w-4" />
-            AI automation for MFD growth
+            AI automation for mutual fund distributors
           </div>
 
           <h1
             className="max-w-3xl text-5xl tracking-tight lg:text-6xl"
             style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
           >
-            Revive Silent Clients. Automate Engagement.{" "}
+            AI-powered advisor growth platform for MFDs.{" "}
             <span className="bg-gradient-to-r from-[#8A2BE2] via-[#6A3DFF] to-[#00B2FF] bg-clip-text text-transparent">
-              Grow AUM.
+              Grow engagement.
             </span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            AlmoraX helps MFDs, financial distributors, and wealth advisors run
-            branded, compliance-friendly WhatsApp campaigns from one intelligent
-            growth workspace.
+            AlmoraX helps MFDs, mutual fund distributors, and wealth advisors
+            automate WhatsApp engagement, campaign planning, co-branding,
+            compliance workflows, and analytics from one premium fintech workspace.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -40,14 +40,6 @@ export function Hero() {
               style={{ background: "linear-gradient(135deg, #8A2BE2, #6A3DFF, #00B2FF)", color: "white" }}
             >
               Book Demo
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="h-12 rounded-xl border-slate-200 px-7 transition-all hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50"
-            >
-              <Play className="mr-2 h-4 w-4" />
-              Watch Product Tour
             </Button>
           </div>
         </div>
@@ -91,9 +83,9 @@ export function Hero() {
                     <p className="text-xs text-slate-500">245 recipients</p>
                   </div>
                 </div>
-                <div className="flex gap-2">
-                  <span className="h-7 flex-1 rounded-full bg-white" />
-                  <span className="h-7 w-16 rounded-full bg-[#00B2FF]" />
+                <div className="flex items-center gap-2">
+                  <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600">SIP Revival</span>
+                  <span className="rounded-full bg-[#00B2FF] px-3 py-1 text-xs font-bold text-white">Ready</span>
                 </div>
               </div>
 
@@ -127,10 +119,15 @@ export function Hero() {
                   </div>
                   <Zap className="h-4 w-4 text-[#00B2FF]" />
                 </div>
-                <div className="space-y-2">
-                  <div className="h-2 rounded-full bg-white" />
-                  <div className="h-2 w-4/5 rounded-full bg-white" />
-                  <div className="h-8 rounded-xl bg-white" />
+                <div className="space-y-2 text-xs font-semibold text-slate-600">
+                  <div className="flex justify-between rounded-xl bg-white px-3 py-2">
+                    <span>ARN</span>
+                    <span>Applied</span>
+                  </div>
+                  <div className="flex justify-between rounded-xl bg-white px-3 py-2">
+                    <span>Risk note</span>
+                    <span>Verified</span>
+                  </div>
                 </div>
               </div>
             </div>

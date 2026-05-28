@@ -10,7 +10,6 @@ export function Footer() {
     ],
     company: [
       { label: "Blog", href: "/blog" },
-      { label: "Careers", href: "/careers" },
       { label: "Contact", href: "/contact" },
     ],
     legal: [
@@ -38,6 +37,8 @@ export function Footer() {
                 <a
                   key={item.label}
                   href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noreferrer" : undefined}
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 transition-all hover:-translate-y-0.5 hover:bg-sky-50 hover:text-sky-600"
                   aria-label={item.label}
                 >

@@ -10,6 +10,7 @@ export function FeaturesGrid() {
       visual: "Calendar",
       accent: "from-[#8A2BE2] to-[#00B2FF]",
       details: ["Recurring schedules", "AI campaign drafts", "Investor-ready reminders"],
+      stats: ["12 campaigns", "4 scheduled", "Tax saver active"],
     },
     {
       icon: ShieldCheck,
@@ -19,6 +20,7 @@ export function FeaturesGrid() {
       visual: "Verified",
       accent: "from-[#00B2FF] to-[#00B2FF]",
       details: ["ARN placement", "Disclaimer blocks", "Approval states"],
+      stats: ["ARN verified", "2 drafts approved", "Risk copy applied"],
     },
     {
       icon: Palette,
@@ -28,6 +30,7 @@ export function FeaturesGrid() {
       visual: "Brand Kit",
       accent: "from-[#8A2BE2] to-[#C084FC]",
       details: ["Logo lockups", "Advisor identity", "Premium templates"],
+      stats: ["Brand kit live", "8 templates", "Tone matched"],
     },
     {
       icon: MessageSquare,
@@ -37,6 +40,7 @@ export function FeaturesGrid() {
       visual: "WhatsApp",
       accent: "from-[#00B2FF] to-[#22C55E]",
       details: ["Client groups", "One-tap sends", "Follow-up flows"],
+      stats: ["245 recipients", "SIP revival", "Ready to send"],
     },
     {
       icon: BarChart3,
@@ -46,6 +50,7 @@ export function FeaturesGrid() {
       visual: "Insights",
       accent: "from-[#00B2FF] to-[#8A2BE2]",
       details: ["Engagement metrics", "Campaign performance", "Recovery signals"],
+      stats: ["34% engagement", "18 replies", "9 reactivated"],
     },
   ];
 
@@ -104,15 +109,21 @@ export function FeaturesGrid() {
               </p>
 
               <div className="mb-5 rounded-2xl border border-slate-200 bg-slate-50/80 p-4">
-                <div className="mb-3 flex items-end gap-2">
-                  <div className={`h-16 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent}`} />
-                  <div className={`h-10 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent} opacity-70`} />
-                  <div className={`h-20 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent} opacity-90`} />
-                  <div className="ml-auto h-9 w-24 rounded-full border border-slate-200 bg-white" />
+                <div className="mb-3 flex items-center justify-between gap-3">
+                  <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
+                    Live demo
+                  </span>
+                  <span className={`rounded-full bg-gradient-to-r ${feature.accent} px-3 py-1 text-xs font-bold text-white`}>
+                    Active
+                  </span>
                 </div>
-                <div className="space-y-2">
-                  <div className="h-2 rounded-full bg-slate-200" />
-                  <div className="h-2 w-2/3 rounded-full bg-slate-200" />
+                <div className="grid gap-2">
+                  {feature.stats.map((stat, index) => (
+                    <div key={stat} className="flex items-center justify-between rounded-xl bg-white px-3 py-2 shadow-sm">
+                      <span className="text-xs font-semibold text-slate-600">{stat}</span>
+                      <span className={`h-2.5 w-2.5 rounded-full bg-gradient-to-r ${feature.accent}`} style={{ opacity: 1 - index * 0.18 }} />
+                    </div>
+                  ))}
                 </div>
               </div>
 

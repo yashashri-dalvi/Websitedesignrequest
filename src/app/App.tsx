@@ -4,7 +4,6 @@ import { ProblemSection } from "./components/ProblemSection";
 import { AIOperatingSystem } from "./components/AIOperatingSystem";
 import { FeaturesGrid } from "./components/FeaturesGrid";
 import { WorkflowShowcase } from "./components/WorkflowShowcase";
-import { ComplianceSection } from "./components/ComplianceSection";
 import { Pricing } from "./components/Pricing";
 import { FAQ } from "./components/FAQ";
 import { FinalCTA } from "./components/FinalCTA";
@@ -19,10 +18,6 @@ export default function App() {
     return <ComingSoonPage type="Blog" />;
   }
 
-  if (path === "/careers") {
-    return <ComingSoonPage type="Careers" />;
-  }
-
   if (path === "/contact") {
     return <ContactPage />;
   }
@@ -35,7 +30,6 @@ export default function App() {
       <AIOperatingSystem />
       <FeaturesGrid />
       <WorkflowShowcase />
-      <ComplianceSection />
       <Pricing />
       <FAQ />
       <FinalCTA />

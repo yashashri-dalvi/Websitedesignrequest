@@ -3,12 +3,10 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 type ComingSoonPageProps = {
-  type: "Blog" | "Careers";
+  type: "Blog";
 };
 
 export function ComingSoonPage({ type }: ComingSoonPageProps) {
-  const isBlog = type === "Blog";
-
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -27,12 +25,13 @@ export function ComingSoonPage({ type }: ComingSoonPageProps) {
             className="mx-auto mb-6 max-w-3xl text-5xl tracking-tight md:text-6xl"
             style={{ fontWeight: 780, lineHeight: "1.02", color: "#0A0F1E" }}
           >
-            {isBlog ? "Advisor growth insights are under development." : "The AlmoraX careers page is under development."}
+            Advisor growth insights are under development.
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-slate-600">
-            {isBlog
-              ? "We are building a practical knowledge hub for MFDs, financial distributors, and wealth advisors covering automation, client engagement, branding, and compliance-friendly growth."
-              : "We are preparing a clean careers experience for people who want to build modern fintech automation for advisors and financial distribution teams."}
+            We are building a practical knowledge hub for MFDs, financial
+            distributors, and wealth advisors covering AI automation,
+            WhatsApp engagement, campaign operations, co-branding, and
+            compliance-friendly growth.
           </p>
           <a
             href="/"

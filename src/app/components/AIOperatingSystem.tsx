@@ -71,9 +71,11 @@ export function AIOperatingSystem() {
                 ))}
               </div>
 
-              <div className="mt-6 rounded-2xl bg-[#0A0F1E] p-4 text-white">
-                <p className="text-sm font-semibold text-sky-200">Outcome</p>
-                <p className="mt-1 text-lg font-bold">One advisor-approved campaign, ready to send.</p>
+              <div className="mt-6 rounded-2xl border border-sky-100 bg-gradient-to-br from-sky-50 via-white to-violet-50 p-4">
+                <p className="text-sm font-semibold text-sky-700">Outcome</p>
+                <p className="mt-1 text-lg font-bold text-[#0A0F1E]">
+                  One advisor-approved WhatsApp campaign, branded and compliance-ready.
+                </p>
               </div>
             </div>
           </div>

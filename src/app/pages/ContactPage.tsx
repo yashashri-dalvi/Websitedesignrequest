@@ -37,6 +37,9 @@ export function ContactPage() {
                 <div>
                   <div className="text-sm font-semibold text-slate-500">Email</div>
                   <div className="font-bold text-slate-950">yashashri@almorax.com</div>
+                  <div className="mt-1 text-sm font-medium text-slate-500">
+                    Co-Founder & Chief Sales Officer
+                  </div>
                 </div>
               </a>
 

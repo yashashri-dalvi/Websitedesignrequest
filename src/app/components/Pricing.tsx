@@ -1,173 +1,124 @@
-﻿import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
 import { Check } from "lucide-react";
+import { Button } from "./ui/button";
 
 export function Pricing() {
   const plans = [
     {
       name: "Starter",
-      description: "For individual advisors beginning digital engagement",
-      price: "Rs. 2,999",
-      period: "per month",
-      popular: false,
+      description: "For individual MFDs testing AI automation for investor engagement.",
+      price: "Trial Plan",
+      period: "guided onboarding",
       features: [
-        "AI Campaign Planner access",
-        "Up to 100 clients",
-        "5 campaigns per month",
-        "Basic WhatsApp integration",
+        "Campaign Planner access",
+        "Advisor co-branding setup",
+        "WhatsApp campaign workflow",
+        "Basic compliance templates",
         "Email support",
-        "Advisor branding",
-        "Basic compliance templates"
-      ]
+      ],
     },
     {
       name: "Growth",
-      description: "For active advisors scaling client communication",
-      price: "Rs. 6,999",
-      period: "per month",
+      description: "For active distributors scaling campaigns, automation, and analytics.",
+      price: "Custom",
+      period: "based on advisory scale",
       popular: true,
       features: [
         "Everything in Starter",
-        "Up to 500 clients",
-        "Unlimited campaigns",
+        "Unlimited campaign planning",
         "Advanced WhatsApp automation",
-        "Priority support",
-        "Custom branding options",
-        "Advanced compliance automation",
-        "Client segmentation",
+        "Compliance automation for MFDs",
         "Analytics dashboard",
-        "Early access to new features"
-      ]
+        "Priority implementation support",
+      ],
     },
     {
       name: "Enterprise",
-      description: "For advisory firms and teams",
+      description: "For advisory firms and financial distribution teams.",
       price: "Custom",
-      period: "contact us",
-      popular: false,
+      period: "team workflows",
       features: [
-        "Everything in Growth",
-        "Unlimited clients",
         "Multi-user team access",
-        "Custom integrations",
-        "Dedicated account manager",
-        "Custom compliance workflows",
-        "White-label options",
-        "API access",
+        "Custom advisor branding",
+        "Workflow configuration",
         "Advanced reporting",
-        "SLA guarantees"
-      ]
-    }
+        "Dedicated account support",
+      ],
+    },
   ];
 
   return (
-    <section id="pricing" className="py-24 px-6 bg-gradient-to-b from-white to-slate-50">
-      <div className="max-w-7xl mx-auto">
-        {/* Headline */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 
-            className="text-4xl lg:text-5xl mb-6 tracking-tight"
-            style={{ 
-              fontWeight: 700, 
-              lineHeight: '1.1',
-              color: '#0A0F1E',
-              letterSpacing: '-0.02em'
-            }}
+    <section id="pricing" className="bg-gradient-to-b from-white to-slate-50 px-6 py-16">
+      <div className="mx-auto max-w-7xl">
+        <div className="mx-auto mb-10 max-w-3xl text-center">
+          <div className="mb-4 inline-flex rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-700">
+            Pricing
+          </div>
+          <h2
+            className="mb-4 text-4xl tracking-tight lg:text-5xl"
+            style={{ fontWeight: 760, lineHeight: "1.06", color: "#0A0F1E" }}
           >
-            Simple, Transparent
-            <br />
-            <span style={{ color: '#00B2FF' }}>Pricing</span>
+            Flexible plans for AI automation for mutual fund distributors.
           </h2>
-          <p className="text-lg text-slate-600">
-            Choose the plan that fits your practice. Upgrade or downgrade anytime.
+          <p className="text-lg leading-8 text-slate-600">
+            Start with a guided trial or speak with us for a custom advisor
+            growth platform plan.
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {plans.map((plan, i) => (
-            <div 
-              key={i}
-              className={`bg-white rounded-2xl p-8 border-2 shadow-lg transition-all hover:shadow-xl ${
-                plan.popular 
-                  ? 'border-blue-600 relative lg:-mt-4 lg:mb-4' 
-                  : 'border-slate-200'
+        <div className="grid gap-6 lg:grid-cols-3">
+          {plans.map((plan) => (
+            <article
+              key={plan.name}
+              className={`group relative overflow-hidden rounded-[2rem] border bg-white p-7 shadow-[0_18px_60px_rgba(10,15,30,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_28px_90px_rgba(0,178,255,0.16)] ${
+                plan.popular ? "border-sky-200 ring-4 ring-sky-50" : "border-slate-200"
               }`}
             >
+              <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-gradient-to-br from-[#8A2BE2]/15 to-[#00B2FF]/15 blur-2xl transition-transform group-hover:scale-125" />
               {plan.popular && (
-                <Badge 
-                  className="absolute -top-3 left-1/2 transform -translate-x-1/2 px-4 py-1"
-                  style={{ backgroundColor: '#00B2FF', color: 'white' }}
-                >
+                <span className="relative mb-5 inline-flex rounded-full bg-gradient-to-r from-[#8A2BE2] to-[#00B2FF] px-3 py-1 text-xs font-bold text-white">
                   Most Popular
-                </Badge>
+                </span>
               )}
-              
-              <div className="text-center mb-8">
-                <h3 className="text-2xl mb-2" style={{ fontWeight: 700, color: '#0A0F1E' }}>
-                  {plan.name}
-                </h3>
-                <p className="text-sm text-slate-600 mb-6">
-                  {plan.description}
-                </p>
-                
-                <div className="mb-2">
-                  <span 
-                    className="text-4xl tracking-tight"
-                    style={{ fontWeight: 700, color: '#0A0F1E' }}
-                  >
-                    {plan.price}
-                  </span>
-                </div>
-                <p className="text-sm text-slate-600">{plan.period}</p>
-              </div>
-              
-              <Button 
-                className="w-full mb-8"
-                size="lg"
-                variant={plan.popular ? "default" : "outline"}
-                style={plan.popular ? { 
-                  backgroundColor: '#00B2FF', 
-                  color: 'white' 
-                } : {}}
-              >
-                {plan.price === "Custom" ? "Contact Sales" : "Get Started"}
-              </Button>
-              
-              <div className="space-y-4">
-                {plan.features.map((feature, j) => (
-                  <div key={j} className="flex items-start gap-3">
-                    <div 
-                      className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
-                        plan.popular ? 'bg-blue-600' : 'bg-emerald-100'
-                      }`}
-                    >
-                      <Check 
-                        className={`w-3 h-3 ${
-                          plan.popular ? 'text-white' : 'text-emerald-600'
-                        }`}
-                      />
-                    </div>
-                    <span className="text-sm text-slate-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
 
-        {/* Money Back Guarantee */}
-        <div className="text-center mt-16">
-          <div className="inline-block bg-emerald-50 border border-emerald-200 rounded-xl px-6 py-3">
-            <p className="text-sm" style={{ fontWeight: 600, color: '#059669' }}>
-              ✓ 14-Day Money-Back Guarantee • No Questions Asked
-            </p>
-          </div>
+              <div className="relative">
+                <h3 className="mb-2 text-2xl font-bold text-[#0A0F1E]">{plan.name}</h3>
+                <p className="mb-6 min-h-14 text-sm leading-6 text-slate-600">{plan.description}</p>
+                <div className="mb-1 text-4xl font-black tracking-tight text-[#0A0F1E]">
+                  {plan.price}
+                </div>
+                <p className="mb-6 text-sm font-semibold text-slate-500">{plan.period}</p>
+
+                <Button
+                  className="mb-7 h-11 w-full rounded-xl transition-all hover:-translate-y-0.5"
+                  style={{
+                    background: plan.popular
+                      ? "linear-gradient(135deg, #8A2BE2, #6A3DFF, #00B2FF)"
+                      : "#FFFFFF",
+                    color: plan.popular ? "white" : "#0A0F1E",
+                    border: plan.popular ? "0" : "1px solid #E6E6E6",
+                  }}
+                  onClick={() => {
+                    window.location.href = "/contact";
+                  }}
+                >
+                  Contact Us
+                </Button>
+
+                <div className="space-y-3">
+                  {plan.features.map((feature) => (
+                    <div key={feature} className="flex items-start gap-3">
+                      <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-sky-50">
+                        <Check className="h-3 w-3 text-[#00B2FF]" />
+                      </span>
+                      <span className="text-sm leading-6 text-slate-700">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
-
-
