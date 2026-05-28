@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+﻿import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Check } from "lucide-react";
 
@@ -7,7 +7,7 @@ export function Pricing() {
     {
       name: "Starter",
       description: "For individual advisors beginning digital engagement",
-      price: "₹2,999",
+      price: "Rs. 2,999",
       period: "per month",
       popular: false,
       features: [
@@ -23,7 +23,7 @@ export function Pricing() {
     {
       name: "Growth",
       description: "For active advisors scaling client communication",
-      price: "₹6,999",
+      price: "Rs. 6,999",
       period: "per month",
       popular: true,
       features: [
@@ -70,13 +70,13 @@ export function Pricing() {
             style={{ 
               fontWeight: 700, 
               lineHeight: '1.1',
-              color: '#081120',
+              color: '#061526',
               letterSpacing: '-0.02em'
             }}
           >
             Simple, Transparent
             <br />
-            <span style={{ color: '#2563EB' }}>Pricing</span>
+            <span style={{ color: '#0EA5E9' }}>Pricing</span>
           </h2>
           <p className="text-lg text-slate-600">
             Choose the plan that fits your practice. Upgrade or downgrade anytime.
@@ -97,14 +97,14 @@ export function Pricing() {
               {plan.popular && (
                 <Badge 
                   className="absolute -top-3 left-1/2 transform -translate-x-1/2 px-4 py-1"
-                  style={{ backgroundColor: '#2563EB', color: 'white' }}
+                  style={{ backgroundColor: '#0EA5E9', color: 'white' }}
                 >
                   Most Popular
                 </Badge>
               )}
               
               <div className="text-center mb-8">
-                <h3 className="text-2xl mb-2" style={{ fontWeight: 700, color: '#081120' }}>
+                <h3 className="text-2xl mb-2" style={{ fontWeight: 700, color: '#061526' }}>
                   {plan.name}
                 </h3>
                 <p className="text-sm text-slate-600 mb-6">
@@ -114,7 +114,7 @@ export function Pricing() {
                 <div className="mb-2">
                   <span 
                     className="text-4xl tracking-tight"
-                    style={{ fontWeight: 700, color: '#081120' }}
+                    style={{ fontWeight: 700, color: '#061526' }}
                   >
                     {plan.price}
                   </span>
@@ -127,7 +127,7 @@ export function Pricing() {
                 size="lg"
                 variant={plan.popular ? "default" : "outline"}
                 style={plan.popular ? { 
-                  backgroundColor: '#2563EB', 
+                  backgroundColor: '#0EA5E9', 
                   color: 'white' 
                 } : {}}
               >
@@ -168,3 +168,5 @@ export function Pricing() {
     </section>
   );
 }
+
+

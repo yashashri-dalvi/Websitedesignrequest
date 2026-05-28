@@ -1,4 +1,4 @@
-import {
+﻿import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -9,95 +9,76 @@ export function FAQ() {
   const faqs = [
     {
       question: "What is AlmoraX?",
-      answer: "AlmoraX is an AI-powered growth operating system designed specifically for Mutual Fund Distributors (MFDs), wealth advisors, and financial professionals. It automates client activation, engagement, and communication workflows to help you revive inactive clients and grow AUM without manual operational overhead."
+      answer:
+        "AlmoraX is an AI automation platform for MFDs, financial distributors, and wealth advisors. It helps teams plan campaigns, apply branding and compliance, coordinate WhatsApp outreach, and track client engagement.",
     },
     {
-      question: "Who is AlmoraX for?",
-      answer: "AlmoraX is built for individual financial advisors, MFDs, wealth advisors, and advisory firms in India who want to automate client engagement, scale their communication, and maintain consistent touchpoints with their client base without spending hours on manual outreach."
+      question: "Who is AlmoraX built for?",
+      answer:
+        "It is built for Indian MFDs, financial distributors, wealth advisors, and advisory teams that want a professional client-engagement operating system without adding manual workload.",
     },
     {
-      question: "How does WhatsApp engagement work?",
-      answer: "AlmoraX integrates with WhatsApp to enable one-tap campaign distribution. Once you approve a campaign in the AI Campaign Planner, the system automatically sends personalized messages to segmented client groups via WhatsApp. You maintain full control over what gets sent and when."
+      question: "How does WhatsApp automation help?",
+      answer:
+        "AlmoraX helps prepare segmented WhatsApp communication workflows so advisors can follow up consistently, revive inactive clients, and keep investor conversations organized.",
     },
     {
-      question: "Can AlmoraX help revive inactive SIP clients?",
-      answer: "Yes! AlmoraX's AI Detection Engine continuously monitors client behavior and automatically identifies inactive or at-risk clients. It then generates personalized, localized re-engagement campaigns that you can send with one tap to bring clients back into active investment."
+      question: "Does AlmoraX support compliance workflows?",
+      answer:
+        "Yes. The platform is designed around compliance-friendly communication with advisor identity, ARN details, disclaimers, and approval-ready campaign previews.",
     },
     {
-      question: "Is compliance supported?",
-      answer: "Absolutely. AlmoraX automatically applies SEBI-compliant disclaimers, risk warnings, and regulatory requirements to all communications. Your ARN (AMFI Registration Number) is prominently displayed, and all templates are pre-approved to meet regulatory standards."
-    },
-    {
-      question: "What features are coming soon?",
-      answer: "We're continuously rolling out new features including AI Co-Branding, full WhatsApp Automation, CRM Intelligence, advanced Client Segmentation, comprehensive Analytics Dashboard, AI Engagement Assistant, and the SIP Revival Engine. Existing customers get early access to all new features."
-    },
-    {
-      question: "Does AlmoraX support advisor branding?",
-      answer: "Yes! AlmoraX automatically applies your logo, brand colors, and professional identity to every campaign and communication. This ensures consistent branding across all client touchpoints while maintaining a professional, trustworthy image."
+      question: "Can I use my own branding?",
+      answer:
+        "Yes. AI Co-Branding applies advisor identity, logo placement, and consistent visual templates so every client touchpoint looks professional and trustworthy.",
     },
     {
       question: "Can teams use AlmoraX?",
-      answer: "Yes, our Enterprise plan is specifically designed for advisory firms and teams. It includes multi-user access, role-based permissions, collaborative campaign management, and team analytics. Contact our sales team to learn more about team pricing and features."
-    }
+      answer:
+        "Yes. AlmoraX supports individual advisors as well as firms that need organized campaign planning, analytics, and repeatable engagement workflows.",
+    },
   ];
 
   return (
-    <section id="faq" className="py-24 px-6 bg-white">
-      <div className="max-w-4xl mx-auto">
-        {/* Headline */}
-        <div className="text-center mb-16">
-          <h2 
-            className="text-4xl lg:text-5xl mb-6 tracking-tight"
-            style={{ 
-              fontWeight: 700, 
-              lineHeight: '1.1',
-              color: '#081120',
-              letterSpacing: '-0.02em'
-            }}
+    <section id="faq" className="bg-white px-6 py-20">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+        <div className="lg:sticky lg:top-28">
+          <div className="mb-4 inline-flex rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-700">
+            FAQ
+          </div>
+          <h2
+            className="mb-4 text-4xl tracking-tight lg:text-5xl"
+            style={{ fontWeight: 750, lineHeight: "1.06", color: "#061526" }}
           >
-            Frequently Asked
-            <br />
-            <span style={{ color: '#2563EB' }}>Questions</span>
+            Clear answers for serious advisor teams.
           </h2>
-          <p className="text-lg text-slate-600">
-            Everything you need to know about AlmoraX
+          <p className="max-w-md text-base leading-7 text-slate-600">
+            A compact overview of how AlmoraX supports campaign automation,
+            advisor branding, compliance-safe workflows, and client engagement.
           </p>
         </div>
 
-        {/* Accordion */}
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="grid gap-3">
           {faqs.map((faq, i) => (
-            <AccordionItem 
-              key={i} 
+            <AccordionItem
+              key={faq.question}
               value={`item-${i}`}
-              className="bg-slate-50 rounded-xl border border-slate-200 px-6 data-[state=open]:bg-white data-[state=open]:border-blue-300"
+              className="rounded-2xl border border-slate-200 bg-white px-5 shadow-sm transition-all data-[state=open]:border-sky-200 data-[state=open]:shadow-lg data-[state=open]:shadow-sky-100"
             >
-              <AccordionTrigger className="text-left hover:no-underline py-6">
-                <span style={{ fontWeight: 600, color: '#081120' }}>
+              <AccordionTrigger className="py-5 text-left hover:no-underline">
+                <span className="text-sm font-bold text-slate-950 sm:text-base">
                   {faq.question}
                 </span>
               </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed pb-6">
+              <AccordionContent className="pb-5 text-sm leading-7 text-slate-600">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
-
-        {/* Contact CTA */}
-        <div className="text-center mt-12">
-          <p className="text-slate-600 mb-4">
-            Still have questions?
-          </p>
-          <a 
-            href="mailto:support@almorax.com"
-            className="text-blue-600 hover:text-blue-700"
-            style={{ fontWeight: 600 }}
-          >
-            Contact our support team →
-          </a>
-        </div>
       </div>
     </section>
   );
 }
+
+

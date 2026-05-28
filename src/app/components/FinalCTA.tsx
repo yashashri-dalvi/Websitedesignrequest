@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+﻿import { Button } from "./ui/button";
 import { Sparkles, TrendingUp, Users } from "lucide-react";
 
 export function FinalCTA() {
@@ -26,7 +26,7 @@ export function FinalCTA() {
           </h2>
           <p className="text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto">
             AlmoraX helps advisors automate engagement, revive inactive clients, and stay 
-            consistently top-of-mind — without operational overload.
+            consistently top-of-mind - without operational overload.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export function FinalCTA() {
               fontWeight: 600
             }}
           >
-            Book Your Demo
+            Book Demo
           </Button>
           <Button 
             size="lg"
@@ -103,3 +103,5 @@ export function FinalCTA() {
     </section>
   );
 }
+
+

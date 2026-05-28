@@ -1,4 +1,4 @@
-import { Navbar } from "./components/Navbar";
+﻿import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { ProblemSection } from "./components/ProblemSection";
 import { AIOperatingSystem } from "./components/AIOperatingSystem";
@@ -9,8 +9,24 @@ import { Pricing } from "./components/Pricing";
 import { FAQ } from "./components/FAQ";
 import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
+import { ComingSoonPage } from "./pages/ComingSoonPage";
+import { ContactPage } from "./pages/ContactPage";
 
 export default function App() {
+  const path = window.location.pathname;
+
+  if (path === "/blog") {
+    return <ComingSoonPage type="Blog" />;
+  }
+
+  if (path === "/careers") {
+    return <ComingSoonPage type="Careers" />;
+  }
+
+  if (path === "/contact") {
+    return <ContactPage />;
+  }
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -27,3 +43,5 @@ export default function App() {
     </div>
   );
 }
+
+

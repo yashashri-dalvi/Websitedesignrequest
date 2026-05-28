@@ -1,181 +1,135 @@
-import { Calendar, Palette, MessageSquare, Database, Shield, Users, BarChart3, Zap, Target } from "lucide-react";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
+﻿import { BarChart3, CalendarDays, MessageSquare, Palette, ShieldCheck } from "lucide-react";
 
 export function FeaturesGrid() {
-  const activeFeature = {
-    icon: Calendar,
-    title: "AI Campaign Planner",
-    description: "Your operational center for advisor engagement",
-    features: [
-      "Campaign scheduling & automation",
-      "Localized messaging for Indian investors",
-      "WhatsApp campaign planning",
-      "Recurring engagement workflows",
-      "Smart reminders & follow-ups",
-      "AI-generated campaign suggestions",
-      "Engagement calendar view",
-      "Investor communication workflows"
-    ]
-  };
-
-  const comingSoonFeatures = [
+  const features = [
+    {
+      icon: CalendarDays,
+      title: "Campaign Planner",
+      description:
+        "Plan monthly investor touchpoints, SIP nudges, tax-saving reminders, and festival campaigns from one organized calendar.",
+      visual: "Calendar",
+      accent: "from-[#8B5CF6] to-[#0EA5E9]",
+      details: ["Recurring schedules", "AI campaign drafts", "Investor-ready reminders"],
+    },
+    {
+      icon: ShieldCheck,
+      title: "Compliance Automation",
+      description:
+        "Apply disclaimers, risk language, ARN details, and approval-ready communication checks before campaigns go out.",
+      visual: "Verified",
+      accent: "from-[#0EA5E9] to-[#0EA5E9]",
+      details: ["ARN placement", "Disclaimer blocks", "Approval states"],
+    },
     {
       icon: Palette,
       title: "AI Co-Branding",
-      description: "Automatic application of your logo, ARN, and brand identity to all communications"
+      description:
+        "Turn every message into a professional advisor-branded asset with consistent identity, logo placement, and tone.",
+      visual: "Brand Kit",
+      accent: "from-[#8B5CF6] to-[#C084FC]",
+      details: ["Logo lockups", "Advisor identity", "Premium templates"],
     },
     {
       icon: MessageSquare,
       title: "WhatsApp Automation",
-      description: "One-tap broadcast campaigns with intelligent client segmentation"
-    },
-    {
-      icon: Database,
-      title: "CRM Intelligence",
-      description: "Smart client data management with AI-powered insights and recommendations"
-    },
-    {
-      icon: Shield,
-      title: "Compliance Automation",
-      description: "SEBI-compliant disclaimers and regulatory requirements auto-applied"
-    },
-    {
-      icon: Users,
-      title: "Client Segmentation",
-      description: "AI-driven client categorization based on behavior and engagement patterns"
+      description:
+        "Prepare segmented WhatsApp campaigns for client groups and reduce manual follow-ups with structured workflows.",
+      visual: "WhatsApp",
+      accent: "from-[#0EA5E9] to-[#22C55E]",
+      details: ["Client groups", "One-tap sends", "Follow-up flows"],
     },
     {
       icon: BarChart3,
       title: "Analytics Dashboard",
-      description: "Real-time engagement metrics, campaign performance, and AUM tracking"
+      description:
+        "Measure engagement, campaign response, inactive-client recovery, and growth signals in a clean advisor dashboard.",
+      visual: "Insights",
+      accent: "from-[#0EA5E9] to-[#8B5CF6]",
+      details: ["Engagement metrics", "Campaign performance", "Recovery signals"],
     },
-    {
-      icon: Zap,
-      title: "AI Engagement Assistant",
-      description: "Intelligent suggestions for client outreach and engagement timing"
-    },
-    {
-      icon: Target,
-      title: "SIP Revival Engine",
-      description: "Automated detection and re-activation of stopped or paused SIP clients"
-    }
   ];
 
   return (
-    <section id="features" className="py-24 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Headline */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 
-            className="text-4xl lg:text-5xl mb-6 tracking-tight"
-            style={{ 
-              fontWeight: 700, 
-              lineHeight: '1.1',
-              color: '#081120',
-              letterSpacing: '-0.02em'
+    <section id="features" className="relative overflow-hidden bg-white px-6 py-24">
+      <div className="absolute left-1/2 top-12 h-80 w-80 -translate-x-1/2 rounded-full bg-sky-200/30 blur-3xl" />
+      <div className="absolute right-0 top-80 h-72 w-72 rounded-full bg-violet-200/30 blur-3xl" />
+
+      <div className="relative mx-auto max-w-7xl">
+        <div className="mx-auto mb-16 max-w-3xl text-center">
+          <div className="mb-4 inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
+            Advisor growth stack
+          </div>
+          <h2
+            className="mb-6 text-4xl tracking-tight lg:text-5xl"
+            style={{
+              fontWeight: 750,
+              lineHeight: "1.06",
+              color: "#061526",
+              letterSpacing: "-0.02em",
             }}
           >
-            Powerful Features,
-            <br />
-            <span style={{ color: '#2563EB' }}>Launching Soon</span>
+            Everything MFDs need to plan, brand, automate, and measure client engagement.
           </h2>
-          <p className="text-lg text-slate-600">
-            Start with our AI Campaign Planner today. More intelligent features rolling out continuously.
+          <p className="text-lg leading-relaxed text-slate-600">
+            AlmoraX brings campaign operations, compliance workflows, WhatsApp outreach,
+            advisor branding, and performance visibility into one premium SaaS workspace.
           </p>
         </div>
 
-        {/* Active Feature - Highlighted */}
-        <div className="mb-12">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border-2 border-blue-300 shadow-xl">
-            <div className="flex items-start justify-between mb-6">
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <activeFeature.icon className="w-7 h-7 text-white" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <h3 className="text-2xl" style={{ fontWeight: 700, color: '#081120' }}>
-                      {activeFeature.title}
-                    </h3>
-                    <Badge 
-                      className="text-xs px-3 py-1"
-                      style={{ backgroundColor: '#10B981', color: 'white' }}
-                    >
-                      Available Now
-                    </Badge>
-                  </div>
-                  <p className="text-base text-slate-700">
-                    {activeFeature.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-3 mb-6">
-              {activeFeature.features.map((feature, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <div className="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-sm text-slate-700">{feature}</span>
-                </div>
-              ))}
-            </div>
-            
-            <Button 
-              size="lg"
-              style={{ 
-                backgroundColor: '#2563EB', 
-                color: 'white'
-              }}
+        <div className="grid gap-5 lg:grid-cols-5">
+          {features.map((feature, i) => (
+            <article
+              key={feature.title}
+              className={`group relative min-h-[420px] overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-[0_28px_80px_rgba(14,165,233,0.18)] ${
+                i === 0 ? "lg:col-span-2" : ""
+              }`}
             >
-              Start Planning Campaigns
-            </Button>
-          </div>
-        </div>
+              <div className={`absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r ${feature.accent}`} />
+              <div className={`absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br ${feature.accent} opacity-10 blur-2xl transition-transform duration-500 group-hover:scale-125`} />
 
-        {/* Coming Soon Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {comingSoonFeatures.map((feature, i) => (
-            <div 
-              key={i}
-              className="bg-slate-50 rounded-xl p-6 border border-slate-200 relative overflow-hidden opacity-75 hover:opacity-90 transition-opacity"
-            >
-              <Badge 
-                className="absolute top-4 right-4 text-xs"
-                variant="secondary"
-              >
-                Coming Soon
-              </Badge>
-              
-              <div className="w-12 h-12 bg-slate-200 rounded-lg flex items-center justify-center mb-4">
-                <feature.icon className="w-6 h-6 text-slate-500" />
+              <div className="mb-6 flex items-center justify-between">
+                <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${feature.accent} shadow-lg shadow-sky-500/20`}>
+                  <feature.icon className="h-7 w-7 text-white" />
+                </div>
+                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">
+                  {feature.visual}
+                </span>
               </div>
-              
-              <h3 className="text-base mb-2" style={{ fontWeight: 600, color: '#64748B' }}>
+
+              <h3 className="mb-3 text-xl font-bold tracking-tight text-slate-950">
                 {feature.title}
               </h3>
-              
-              <p className="text-sm text-slate-500 leading-relaxed">
+              <p className="mb-6 text-sm leading-7 text-slate-600">
                 {feature.description}
               </p>
-            </div>
-          ))}
-        </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <p className="text-sm text-slate-600 mb-4">
-            Want early access to new features?
-          </p>
-          <Button variant="outline" size="lg">
-            Join Waitlist
-          </Button>
+              <div className="mb-6 rounded-2xl border border-slate-200 bg-slate-50/80 p-4">
+                <div className="mb-3 flex items-end gap-2">
+                  <div className={`h-16 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent}`} />
+                  <div className={`h-10 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent} opacity-70`} />
+                  <div className={`h-20 w-5 rounded-t-lg bg-gradient-to-t ${feature.accent} opacity-90`} />
+                  <div className="ml-auto h-9 w-24 rounded-full border border-slate-200 bg-white" />
+                </div>
+                <div className="space-y-2">
+                  <div className="h-2 rounded-full bg-slate-200" />
+                  <div className="h-2 w-2/3 rounded-full bg-slate-200" />
+                </div>
+              </div>
+
+              <ul className="space-y-3">
+                {feature.details.map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-sm font-medium text-slate-700">
+                    <span className={`h-2 w-2 rounded-full bg-gradient-to-r ${feature.accent}`} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
+

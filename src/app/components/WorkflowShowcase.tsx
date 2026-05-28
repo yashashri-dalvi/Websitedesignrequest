@@ -1,4 +1,4 @@
-import { AlertCircle, Brain, Sparkles, Shield, Send, CheckCircle } from "lucide-react";
+﻿import { AlertCircle, Brain, Sparkles, Shield, Send, CheckCircle } from "lucide-react";
 
 export function WorkflowShowcase() {
   const steps = [
@@ -13,14 +13,14 @@ export function WorkflowShowcase() {
       icon: Brain,
       title: "AI Detects Inactivity",
       description: "Intelligent analysis identifies the client as at-risk for churn",
-      color: "#2563EB",
+      color: "#0EA5E9",
       bgColor: "#DBEAFE"
     },
     {
       icon: Sparkles,
       title: "Localized Campaign Generated",
       description: "AI creates culturally relevant, personalized re-engagement content",
-      color: "#7C3AED",
+      color: "#8B5CF6",
       bgColor: "#EDE9FE"
     },
     {
@@ -41,7 +41,7 @@ export function WorkflowShowcase() {
       icon: CheckCircle,
       title: "Client Re-engages",
       description: "Client responds positively and resumes their investment journey",
-      color: "#10B981",
+      color: "#8B5CF6",
       bgColor: "#D1FAE5"
     }
   ];
@@ -56,13 +56,13 @@ export function WorkflowShowcase() {
             style={{ 
               fontWeight: 700, 
               lineHeight: '1.1',
-              color: '#081120',
+              color: '#061526',
               letterSpacing: '-0.02em'
             }}
           >
             From Client Signals to WhatsApp Engagement
             <br />
-            <span style={{ color: '#2563EB' }}>— Fully Automated</span>
+            <span style={{ color: '#0EA5E9' }}>- Fully Automated</span>
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             Watch how AlmoraX saves hours of manual work and revives revenue automatically
@@ -85,7 +85,7 @@ export function WorkflowShowcase() {
                     </div>
                     
                     <div className="flex-1">
-                      <h3 className="text-sm mb-2" style={{ fontWeight: 600, color: '#081120' }}>
+                      <h3 className="text-sm mb-2" style={{ fontWeight: 600, color: '#061526' }}>
                         {step.title}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">
@@ -129,7 +129,7 @@ export function WorkflowShowcase() {
                     
                     <div className="bg-white rounded-xl p-4 shadow-lg border-2 flex-1" style={{ borderColor: '#E2E8F0' }}>
                       <div className="flex items-start justify-between mb-2">
-                        <h3 className="text-base" style={{ fontWeight: 600, color: '#081120' }}>
+                        <h3 className="text-base" style={{ fontWeight: 600, color: '#061526' }}>
                           {step.title}
                         </h3>
                         <span className="text-sm" style={{ fontWeight: 700, color: step.color }}>
@@ -150,19 +150,19 @@ export function WorkflowShowcase() {
         {/* Impact Stats */}
         <div className="grid md:grid-cols-3 gap-8 mt-20 max-w-4xl mx-auto">
           <div className="text-center">
-            <div className="text-4xl mb-2" style={{ fontWeight: 700, color: '#2563EB' }}>
+            <div className="text-4xl mb-2" style={{ fontWeight: 700, color: '#0EA5E9' }}>
               90%
             </div>
             <p className="text-sm text-slate-600">Time Saved on Client Outreach</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl mb-2" style={{ fontWeight: 700, color: '#10B981' }}>
+            <div className="text-4xl mb-2" style={{ fontWeight: 700, color: '#8B5CF6' }}>
               3x
             </div>
             <p className="text-sm text-slate-600">Higher Client Re-engagement Rate</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl mb-2" style={{ fontWeight: 700, color: '#7C3AED' }}>
+            <div className="text-4xl mb-2" style={{ fontWeight: 700, color: '#8B5CF6' }}>
               24/7
             </div>
             <p className="text-sm text-slate-600">Automated Client Monitoring</p>
@@ -172,3 +172,5 @@ export function WorkflowShowcase() {
     </section>
   );
 }
+
+

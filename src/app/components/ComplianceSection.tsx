@@ -1,4 +1,4 @@
-import { Shield, Award, FileCheck, UserCheck } from "lucide-react";
+﻿import { Shield, Award, FileCheck, UserCheck } from "lucide-react";
 
 export function ComplianceSection() {
   const features = [
@@ -34,13 +34,13 @@ export function ComplianceSection() {
             style={{ 
               fontWeight: 700, 
               lineHeight: '1.1',
-              color: '#081120',
+              color: '#061526',
               letterSpacing: '-0.02em'
             }}
           >
             Built for
             <br />
-            <span style={{ color: '#2563EB' }}>Trust, Branding & Compliance</span>
+            <span style={{ color: '#0EA5E9' }}>Trust, Branding & Compliance</span>
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             Maintain professional standards while staying compliant with all regulatory requirements
@@ -58,9 +58,9 @@ export function ComplianceSection() {
                 className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
                 style={{ backgroundColor: '#DBEAFE' }}
               >
-                <feature.icon className="w-7 h-7" style={{ color: '#2563EB' }} />
+                <feature.icon className="w-7 h-7" style={{ color: '#0EA5E9' }} />
               </div>
-              <h3 className="text-xl mb-3" style={{ fontWeight: 600, color: '#081120' }}>
+              <h3 className="text-xl mb-3" style={{ fontWeight: 600, color: '#061526' }}>
                 {feature.title}
               </h3>
               <p className="text-base text-slate-600 leading-relaxed">
@@ -82,7 +82,7 @@ export function ComplianceSection() {
                       <span className="text-white" style={{ fontWeight: 700 }}>A</span>
                     </div>
                     <div>
-                      <div className="text-sm" style={{ fontWeight: 600, color: '#081120' }}>
+                      <div className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>
                         Advisor Name
                       </div>
                       <div className="text-xs text-slate-600">ARN-123456</div>
@@ -93,7 +93,7 @@ export function ComplianceSection() {
                 
                 <div className="space-y-4">
                   <div>
-                    <div className="text-sm" style={{ fontWeight: 600, color: '#081120' }}>
+                    <div className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>
                       Tax-Saving Investment Reminder
                     </div>
                     <p className="text-xs text-slate-600 mt-2 leading-relaxed">
@@ -129,7 +129,7 @@ export function ComplianceSection() {
             {/* Right - Benefits List */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl mb-4" style={{ fontWeight: 700, color: '#081120' }}>
+                <h3 className="text-2xl mb-4" style={{ fontWeight: 700, color: '#061526' }}>
                   Professional & Trustworthy
                 </h3>
                 <p className="text-base text-slate-600 leading-relaxed">
@@ -162,3 +162,5 @@ export function ComplianceSection() {
     </section>
   );
 }
+
+

@@ -1,11 +1,12 @@
-import { AlertCircle, FileText, MessageSquare, Table, Mail, FolderOpen } from "lucide-react";
+﻿import { AlertCircle, FileText, MessageSquare, Table, Mail, FolderOpen, Palette } from "lucide-react";
 
 export function ProblemSection() {
   const tools = [
     { icon: MessageSquare, label: "WhatsApp", color: "#25D366" },
     { icon: FileText, label: "PDFs", color: "#DC2626" },
-    { icon: Table, label: "Spreadsheets", color: "#10B981" },
-    { icon: Mail, label: "Email", color: "#2563EB" },
+    { icon: Palette, label: "Canva", color: "#8B5CF6" },
+    { icon: Table, label: "Spreadsheets", color: "#8B5CF6" },
+    { icon: Mail, label: "Email", color: "#0EA5E9" },
     { icon: FolderOpen, label: "CRM", color: "#F59E0B" },
   ];
 
@@ -19,13 +20,13 @@ export function ProblemSection() {
             style={{ 
               fontWeight: 700, 
               lineHeight: '1.1',
-              color: '#081120',
+              color: '#061526',
               letterSpacing: '-0.02em'
             }}
           >
-            Financial Advisors Don't Have a Content Problem.
+            MFDs and Wealth Advisors Don't Have a Content Problem.
             <br />
-            <span style={{ color: '#2563EB' }}>They Have an Activation Problem.</span>
+            <span style={{ color: '#0EA5E9' }}>They Have an Activation Problem.</span>
           </h2>
         </div>
 
@@ -70,7 +71,7 @@ export function ProblemSection() {
               <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                 <item.icon className="w-6 h-6 text-red-600" />
               </div>
-              <h3 className="text-base mb-2" style={{ fontWeight: 600, color: '#081120' }}>
+              <h3 className="text-base mb-2" style={{ fontWeight: 600, color: '#061526' }}>
                 {item.title}
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -84,7 +85,7 @@ export function ProblemSection() {
         <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 lg:p-12 border border-slate-200">
           <div className="text-center mb-8">
             <p className="text-sm text-slate-600 mb-2">Today's Reality</p>
-            <h3 className="text-2xl" style={{ fontWeight: 700, color: '#081120' }}>
+            <h3 className="text-2xl" style={{ fontWeight: 700, color: '#061526' }}>
               Chaotic, Fragmented Workflow
             </h3>
           </div>
@@ -94,7 +95,7 @@ export function ProblemSection() {
               <div key={i} className="relative">
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-200 flex flex-col items-center gap-2">
                   <tool.icon className="w-8 h-8" style={{ color: tool.color }} />
-                  <span className="text-xs" style={{ fontWeight: 500, color: '#081120' }}>
+                  <span className="text-xs" style={{ fontWeight: 500, color: '#061526' }}>
                     {tool.label}
                   </span>
                 </div>
@@ -109,7 +110,7 @@ export function ProblemSection() {
 
           <div className="text-center">
             <div className="inline-block bg-white rounded-xl px-6 py-3 shadow-lg border-2 border-blue-600">
-              <p className="text-sm" style={{ fontWeight: 600, color: '#2563EB' }}>
+              <p className="text-sm" style={{ fontWeight: 600, color: '#0EA5E9' }}>
                 ↓ Switch to One AI Operating System ↓
               </p>
             </div>
@@ -119,3 +120,5 @@ export function ProblemSection() {
     </section>
   );
 }
+
+

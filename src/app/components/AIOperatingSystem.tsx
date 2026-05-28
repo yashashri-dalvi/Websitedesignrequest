@@ -1,4 +1,4 @@
-import { Database, Brain, Palette, Shield, MessageSquare, BarChart3 } from "lucide-react";
+﻿import { Database, Brain, Palette, Shield, MessageSquare, BarChart3 } from "lucide-react";
 
 export function AIOperatingSystem() {
   const workflowSteps = [
@@ -49,13 +49,13 @@ export function AIOperatingSystem() {
             style={{ 
               fontWeight: 700, 
               lineHeight: '1.1',
-              color: '#081120',
+              color: '#061526',
               letterSpacing: '-0.02em'
             }}
           >
             The AI Operating System
             <br />
-            <span style={{ color: '#2563EB' }}>for Advisor Growth</span>
+            <span style={{ color: '#0EA5E9' }}>for Advisor Growth</span>
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             AlmoraX transforms engagement into an automated growth engine with intelligent 
@@ -78,7 +78,7 @@ export function AIOperatingSystem() {
                       <div 
                         className="w-16 h-16 rounded-xl flex items-center justify-center shadow-lg"
                         style={{ 
-                          backgroundColor: i < 2 ? '#2563EB' : i < 5 ? '#3B82F6' : '#10B981'
+                          backgroundColor: i < 2 ? '#0EA5E9' : i < 5 ? '#3B82F6' : '#8B5CF6'
                         }}
                       >
                         <step.icon className="w-8 h-8 text-white" />
@@ -87,7 +87,7 @@ export function AIOperatingSystem() {
                     
                     {/* Content */}
                     <div className="flex-1 bg-white rounded-xl p-6 shadow-md border border-slate-200">
-                      <h3 className="text-lg mb-2" style={{ fontWeight: 600, color: '#081120' }}>
+                      <h3 className="text-lg mb-2" style={{ fontWeight: 600, color: '#061526' }}>
                         {step.title}
                       </h3>
                       <p className="text-sm text-slate-600 leading-relaxed">
@@ -128,7 +128,7 @@ export function AIOperatingSystem() {
               key={i}
               className="bg-white rounded-xl p-6 border-2 border-blue-100 hover:border-blue-300 transition-colors"
             >
-              <h4 className="text-base mb-3" style={{ fontWeight: 600, color: '#2563EB' }}>
+              <h4 className="text-base mb-3" style={{ fontWeight: 600, color: '#0EA5E9' }}>
                 {benefit.title}
               </h4>
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -141,3 +141,5 @@ export function AIOperatingSystem() {
     </section>
   );
 }
+
+

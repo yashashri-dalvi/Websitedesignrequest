@@ -1,20 +1,25 @@
-import { Button } from "./ui/button";
+﻿import { Button } from "./ui/button";
 import { Play, TrendingUp, Users, MessageSquare, Calendar, Zap, BarChart3 } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-white to-slate-50/50">
+    <section className="relative overflow-hidden pt-36 pb-20 px-6 bg-gradient-to-b from-white to-slate-50/50">
+      <div className="absolute left-8 top-28 h-72 w-72 rounded-full bg-violet-200/25 blur-3xl" />
+      <div className="absolute right-12 top-36 h-80 w-80 rounded-full bg-sky-200/30 blur-3xl" />
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 relative z-10 animate-fade-up">
             <div className="space-y-6">
+              <div className="inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
+                AI automation for MFD growth
+              </div>
               <h1 
                 className="text-5xl lg:text-6xl tracking-tight"
                 style={{ 
                   fontWeight: 700, 
                   lineHeight: '1.1',
-                  color: '#081120',
+                  color: '#061526',
                   letterSpacing: '-0.02em'
                 }}
               >
@@ -22,12 +27,12 @@ export function Hero() {
                 <br />
                 Automate Engagement.
                 <br />
-                <span style={{ color: '#2563EB' }}>Grow AUM.</span>
+                <span style={{ color: '#0EA5E9' }}>Grow AUM.</span>
               </h1>
               
               <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
-                AlmoraX helps financial advisors automate client activation, WhatsApp engagement, 
-                campaign workflows, branding, and compliance — all from one intelligent AI system.
+                AlmoraX helps MFDs and wealth advisors automate client activation, WhatsApp engagement, 
+                campaign workflows, branding, and compliance - all from one intelligent AI system built for financial distribution.
               </p>
             </div>
             
@@ -35,7 +40,7 @@ export function Hero() {
               <Button 
                 size="lg"
                 style={{ 
-                  backgroundColor: '#2563EB', 
+                  background: 'linear-gradient(135deg, #8B5CF6, #0EA5E9)', 
                   color: 'white',
                   paddingLeft: '2rem',
                   paddingRight: '2rem',
@@ -60,30 +65,30 @@ export function Hero() {
             
             <div className="flex items-center gap-8 pt-4">
               <div>
-                <div className="text-2xl" style={{ fontWeight: 700, color: '#081120' }}>10,000+</div>
-                <div className="text-sm text-slate-600">Active Advisors</div>
+                <div className="text-2xl" style={{ fontWeight: 700, color: '#061526' }}>10,000+</div>
+                <div className="text-sm text-slate-600">Advisor Workflows</div>
               </div>
               <div className="h-12 w-px bg-slate-300" />
               <div>
-                <div className="text-2xl" style={{ fontWeight: 700, color: '#081120' }}>₹500Cr+</div>
-                <div className="text-sm text-slate-600">AUM Managed</div>
+                <div className="text-2xl" style={{ fontWeight: 700, color: '#061526' }}>500Cr+</div>
+                <div className="text-sm text-slate-600">AUM Engagement Signals</div>
               </div>
             </div>
           </div>
           
           {/* Right Column - Dashboard Visual */}
-          <div className="relative">
+          <div className="relative animate-float-slow">
             {/* Main Dashboard Card */}
             <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 relative">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <h3 className="text-sm text-slate-600">AI Dashboard</h3>
-                  <p className="text-xl" style={{ fontWeight: 600, color: '#081120' }}>Client Activation Center</p>
+                  <p className="text-xl" style={{ fontWeight: 600, color: '#061526' }}>Client Activation Center</p>
                 </div>
                 <div className="flex items-center gap-2 px-3 py-1.5 bg-emerald-50 rounded-full">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                  <span className="text-sm" style={{ fontWeight: 500, color: '#10B981' }}>Live</span>
+                  <span className="text-sm" style={{ fontWeight: 500, color: '#8B5CF6' }}>Live</span>
                 </div>
               </div>
               
@@ -95,13 +100,13 @@ export function Hero() {
                       <Users className="w-5 h-5 text-red-600" />
                     </div>
                     <div>
-                      <p className="text-sm" style={{ fontWeight: 600, color: '#081120' }}>12 Inactive Clients Detected</p>
+                      <p className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>12 Inactive Clients Detected</p>
                       <p className="text-xs text-slate-600 mt-1">Last activity: 45+ days ago</p>
                     </div>
                   </div>
                   <Button 
                     size="sm" 
-                    style={{ backgroundColor: '#2563EB', color: 'white', fontSize: '0.75rem' }}
+                    style={{ background: 'linear-gradient(135deg, #8B5CF6, #0EA5E9)', color: 'white', fontSize: '0.75rem' }}
                   >
                     Activate
                   </Button>
@@ -116,10 +121,10 @@ export function Hero() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm" style={{ fontWeight: 600, color: '#081120' }}>WhatsApp Campaign Ready</p>
+                      <p className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>WhatsApp Campaign Ready</p>
                       <Zap className="w-4 h-4 text-blue-600" />
                     </div>
-                    <p className="text-xs text-slate-600">Diwali SIP Revival Campaign • 245 recipients</p>
+                    <p className="text-xs text-slate-600">Diwali SIP Revival Campaign - 245 recipients</p>
                     <div className="mt-3 flex gap-2">
                       <div className="flex-1 h-1.5 bg-blue-200 rounded-full">
                         <div className="w-3/4 h-full bg-blue-600 rounded-full" />
@@ -137,7 +142,7 @@ export function Hero() {
                     <Calendar className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm" style={{ fontWeight: 600, color: '#081120' }}>AI Campaign Suggestions</p>
+                    <p className="text-sm" style={{ fontWeight: 600, color: '#061526' }}>AI Campaign Suggestions</p>
                     <div className="mt-2 space-y-2">
                       <div className="text-xs text-slate-700 flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
@@ -157,14 +162,14 @@ export function Hero() {
             <div className="absolute -right-4 -bottom-4 bg-white rounded-xl shadow-lg border border-slate-200 p-4 w-48">
               <div className="flex items-center gap-2 mb-3">
                 <BarChart3 className="w-4 h-4 text-emerald-600" />
-                <span className="text-xs" style={{ fontWeight: 600, color: '#081120' }}>Engagement Up</span>
+                <span className="text-xs" style={{ fontWeight: 600, color: '#061526' }}>Engagement Up</span>
               </div>
-              <div className="text-2xl" style={{ fontWeight: 700, color: '#10B981' }}>+34%</div>
+              <div className="text-2xl" style={{ fontWeight: 700, color: '#8B5CF6' }}>+34%</div>
               <div className="text-xs text-slate-600">vs last month</div>
             </div>
             
             {/* Floating AI Badge */}
-            <div className="absolute -left-4 top-8 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full px-4 py-2 shadow-lg">
+            <div className="absolute -left-4 top-8 bg-gradient-to-r from-[#8B5CF6] to-[#0EA5E9] text-white rounded-full px-4 py-2 shadow-lg">
               <div className="flex items-center gap-2">
                 <TrendingUp className="w-4 h-4" />
                 <span className="text-xs" style={{ fontWeight: 600 }}>AI-Powered</span>
@@ -176,3 +181,5 @@ export function Hero() {
     </section>
   );
 }
+
+
